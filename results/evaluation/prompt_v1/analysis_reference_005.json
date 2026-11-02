@@ -1,0 +1,221 @@
+{
+ "call_id": "005",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wants to change their flight from 7:30 to 9:30 due to bad weather.",
+   "evidence": [
+    {
+     "turn_id": "005-R0060",
+     "quote": "But can you tell me what the weather is looking like on Wednesday? Because I've heard (um,) I've heard (um.)",
+     "speaker": "Customer",
+     "start": 265.74,
+     "end": 274.94
+    },
+    {
+     "turn_id": "005-R0063",
+     "quote": "(Um,) quite bad on Wednesday.",
+     "speaker": "Customer",
+     "start": 277.74,
+     "end": 280.34
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent checked availability and found one seat left at 9:30.",
+   "evidence": [
+    {
+     "turn_id": "005-R0043",
+     "quote": "d yes we have got the last seat on there",
+     "speaker": "Agent",
+     "start": 197.54,
+     "end": 207.44
+    },
+    {
+     "turn_id": "005-R0044",
+     "quote": "for you",
+     "speaker": "Agent",
+     "start": 207.44,
+     "end": 209.34
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The customer declined to pay the fee and requested a pickup instead.",
+   "evidence": [
+    {
+     "turn_id": "005-R0057",
+     "quote": "No thank you.",
+     "speaker": "Customer",
+     "start": 259.44,
+     "end": 260.24
+    },
+    {
+     "turn_id": "005-R0059",
+     "quote": "No thank you.",
+     "speaker": "Customer",
+     "start": 261.54,
+     "end": 262.34
+    },
+    {
+     "turn_id": "005-R0060",
+     "quote": "No thank you, no thank you, I'll have somebody picking me up.",
+     "speaker": "Customer",
+     "start": 265.74,
+     "end": 274.94
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue and confirmed the change details.",
+   "evidence": [
+    {
+     "turn_id": "005-R0028",
+     "quote": "So you're booked for tomorrow's flight but we need to change that",
+     "speaker": "Agent",
+     "start": 123.64,
+     "end": 129.14
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "no",
+   "note": "No specific action was taken to resolve the flight change request.",
+   "evidence": []
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The customer refused to pay the change fee, leaving the flight change unconfirmed.",
+   "evidence": [
+    {
+     "turn_id": "005-R0057",
+     "quote": "No thank you.",
+     "speaker": "Customer",
+     "start": 259.44,
+     "end": 260.24
+    },
+    {
+     "turn_id": "005-R0059",
+     "quote": "No thank you.",
+     "speaker": "Customer",
+     "start": 261.54,
+     "end": 262.34
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief at the end of the call, stating the agent was helpful and thanking them before hanging up.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-R0068",
+     "quote": "No thanks Morag I think that's everything you've been quite helpful today.",
+     "speaker": "Customer",
+     "start": 309.04,
+     "end": 312.84
+    },
+    {
+     "turn_id": "005-R0071",
+     "quote": "Thank you, and yourself. Goodbye now.",
+     "speaker": "Customer",
+     "start": 337.34,
+     "end": 339.34
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information and asks a clarifying question without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-R0001",
+     "quote": "And the last four digits are five zero four nine.",
+     "speaker": "Customer",
+     "start": 1.24,
+     "end": 6.54
+    },
+    {
+     "turn_id": "005-R0003",
+     "quote": "Is it the CV, the CV number that you want?",
+     "speaker": "Customer",
+     "start": 14.64,
+     "end": 18.44
+    },
+    {
+     "turn_id": "005-R0004",
+     "quote": "Okay, so the (um,) sort. The sort code did you say?",
+     "speaker": "Customer",
+     "start": 26.74,
+     "end": 30.54
+    }
+   ],
+   "window_turn_ids": [
+    "005-R0001",
+    "005-R0003",
+    "005-R0004"
+   ]
+  },
+  "ending": {
+   "label": "negative",
+   "justification": "The customer explicitly states the service was 'quite bad' on Wednesday, indicating dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-R0063",
+     "quote": "(Um,) quite bad on Wednesday.",
+     "speaker": "Customer",
+     "start": 277.74,
+     "end": 280.34
+    }
+   ],
+   "window_turn_ids": [
+    "005-R0063",
+    "005-R0068",
+    "005-R0071"
+   ]
+  },
+  "change": "worsened",
+  "change_note": "Window labels moved from neutral to negative."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent's statements are purely informational regarding flight availability and fees, lacking any emotional expression.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "005-R0043",
+    "quote": "yes we have got the last seat on there for you",
+    "speaker": "Agent",
+    "start": 197.54,
+    "end": 207.44
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_sentiment: quote not found in 005-R0043: 'yes we have got the last seat on there for you'",
+   "concrete_action_or_next_step: answer 'no' cites no turn",
+   "quote not in 005-R0043: 'yes we have got the last seat on there for you'"
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

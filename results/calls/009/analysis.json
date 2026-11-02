@@ -1,0 +1,250 @@
+{
+ "call_id": "009",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer needs to arrange a delivery for a fragile package containing expensive glassware to San Diego.",
+   "evidence": [
+    {
+     "turn_id": "009-T0004",
+     "quote": "I need to arrange a delivery for a package, but it's very fragile. It contains some expensive glassware, so I need to make sure it arrives safely without any damage.",
+     "speaker": "Customer",
+     "start": 25.906,
+     "end": 40.766
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent collected package details, recipient info, and discussed insurance and shipping options.",
+   "evidence": [
+    {
+     "turn_id": "009-T0005",
+     "quote": "To get started, what are the approximate weight and dimensions of the package? I and the exact destination address, please.",
+     "speaker": "Agent",
+     "start": 40.61,
+     "end": 59.15
+    },
+    {
+     "turn_id": "009-T0013",
+     "quote": "Okay, we provide standard insurance coverage up to one hundred dollars automatically. That's for default, but for items like this kind of expensive glassware, we strongly recommend purchasing supplemental insurance just to cover the full declared replacement value.",
+     "speaker": "Agent",
+     "start": 143.762,
+     "end": 157.822
+    },
+    {
+     "turn_id": "009-T0020",
+     "quote": "Okay, let me see. for this kind of items, fast delivery and secure, we have our standard three day service, two day priority, and an overnight express option, which is of course the fastest and most direct route to minimize those stops.",
+     "speaker": "Agent",
+     "start": 272.77,
+     "end": 298.75
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed the order details and scheduled the pickup for the afternoon.",
+   "evidence": [
+    {
+     "turn_id": "009-T0032",
+     "quote": "Certainly, yeah, for sure. Okay, so then I will add the professional packing service to your order and our team will bring to your house the necessary materials and take care of everything during pickup if you want to be present and to be sure, but you don't have to worry about it.",
+     "speaker": "Agent",
+     "start": 475.17,
+     "end": 498.99
+    },
+    {
+     "turn_id": "009-T0034",
+     "quote": "Okay, sure. so just to confirm, I'm going to create the order, the scheduling pickup before four PM. And you want the overnight express service and including the full supplemental insurance with all the packaging service.",
+     "speaker": "Agent",
+     "start": 517.218,
+     "end": 544.558
+    },
+    {
+     "turn_id": "009-T0035",
+     "quote": "Processing that now. And here it is. Successfully schedule your pickup for this afternoon.",
+     "speaker": "Agent",
+     "start": 546.69,
+     "end": 566.21
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's need for safe delivery and fragile item handling.",
+   "evidence": [
+    {
+     "turn_id": "009-T0005",
+     "quote": "Okay, I understand. Glasgow, you said, right? we take special care for fragile items, so don't you worry.",
+     "speaker": "Agent",
+     "start": 40.61,
+     "end": 59.15
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the specific order of overnight express, supplemental insurance, and professional packing.",
+   "evidence": [
+    {
+     "turn_id": "009-T0034",
+     "quote": "Okay, sure. so just to confirm, I'm going to create the order, the scheduling pickup before four PM. And you want the overnight express service and including the full supplemental insurance with all the packaging service.",
+     "speaker": "Agent",
+     "start": 517.218,
+     "end": 544.558
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The agent confirmed the order details and the pickup was successfully scheduled.",
+   "evidence": [
+    {
+     "turn_id": "009-T0035",
+     "quote": "Processing that now. And here it is. Successfully schedule your pickup for this afternoon.",
+     "speaker": "Agent",
+     "start": 546.69,
+     "end": 566.21
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses relief and satisfaction with the service, stating the arrangement 'puts my mind at easy' and repeatedly confirming the outcome is 'perfect'.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "009-T0019",
+     "quote": "Oh, that's perfect. that puts my mind at easy.",
+     "speaker": "Customer",
+     "start": 250.722,
+     "end": 271.502
+    },
+    {
+     "turn_id": "009-T0023",
+     "quote": "that's really sounds perfect.",
+     "speaker": "Customer",
+     "start": 340.258,
+     "end": 358.478
+    },
+    {
+     "turn_id": "009-T0044",
+     "quote": "Okay, that's perfect.",
+     "speaker": "Customer",
+     "start": 660.418,
+     "end": 670.318
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual package details and recipient information without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "009-T0004",
+     "quote": "I need to arrange a delivery for a package, but it's very fragile.",
+     "speaker": "Customer",
+     "start": 25.906,
+     "end": 40.766
+    },
+    {
+     "turn_id": "009-T0007",
+     "quote": "okay the package weighs about twelve pounds and measures are eighteen inches by twelve inches by ten inches.",
+     "speaker": "Customer",
+     "start": 61.01,
+     "end": 86.11
+    },
+    {
+     "turn_id": "009-T0010",
+     "quote": "yes, the recipient is Mr. Lee and his direct number is five seven eight nine zero.",
+     "speaker": "Customer",
+     "start": 112.226,
+     "end": 129.726
+    }
+   ],
+   "window_turn_ids": [
+    "009-T0004",
+    "009-T0007",
+    "009-T0010"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and satisfaction with the assistance received.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "009-T0044",
+     "quote": "Okay, that's perfect.",
+     "speaker": "Customer",
+     "start": 660.418,
+     "end": 670.318
+    },
+    {
+     "turn_id": "009-T0050",
+     "quote": "That's perfect. Thank you for your doubtful assistance.",
+     "speaker": "Customer",
+     "start": 745.666,
+     "end": 750.286
+    }
+   ],
+   "window_turn_ids": [
+    "009-T0044",
+    "009-T0047",
+    "009-T0050"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses satisfaction and gratitude by confirming the order details and offering professional packing services.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "009-T0032",
+    "quote": "Certainly, yeah, for sure.",
+    "speaker": "Agent",
+    "start": 475.17,
+    "end": 498.99
+   },
+   {
+    "turn_id": "009-T0032",
+    "quote": "you don't have to worry about it.",
+    "speaker": "Agent",
+    "start": 475.17,
+    "end": 498.99
+   },
+   {
+    "turn_id": "009-T0034",
+    "quote": "Okay, sure.",
+    "speaker": "Agent",
+    "start": 517.218,
+    "end": 544.558
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_action: quote not found in 009-T0013: \"Okay, we provide standard insurance coverage up to one hundred dollars automatically. That's for default, but for items like this kind of expensive glassware, we strongly recommend purchasing supplemental insurance just to cover the full declared replacement value.\"",
+   "agent_action: quote not in 009-T0013: \"Okay, we provide standard insurance coverage up to one hundred dollars automatically. That's for default, but for items like this kind of expensive glassware, we strongly recommend purchasing supplemental insurance just to cover the full declared replacement value.\". Exact turn text: 'Okay, noted. because of the high value, what kind of insurance coverage do you offer for high value fragile items? I mean How often can I get the tracking updates?'"
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

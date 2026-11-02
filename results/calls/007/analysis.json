@@ -1,0 +1,253 @@
+{
+ "call_id": "007",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted to inquire about catering services for a birthday brunch with 15 people, including dietary restrictions for gluten-free guests.",
+   "evidence": [
+    {
+     "turn_id": "007-T0003",
+     "quote": "I wanted to get some more information because I have a birthday brunch this Saturday that's coming up and I wanna invite 15 people. so I wanted just to know if it would be possible to have you cater for this brunch.",
+     "speaker": "Customer",
+     "start": 30.274,
+     "end": 51.534
+    },
+    {
+     "turn_id": "007-T0011",
+     "quote": "there's a few people who are gluten free. there's fifteen of us, so I would say ten of us are okay with everything and maybe five people are gluten free.",
+     "speaker": "Customer",
+     "start": 115.874,
+     "end": 132.654
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent explained menu options, pricing, delivery times, and additional service packages available for the event.",
+   "evidence": [
+    {
+     "turn_id": "007-T0015",
+     "quote": "you want me to call out some of the most popular brunch options, and then we can just see if anything tickles your fancy.",
+     "speaker": "Agent",
+     "start": 155.634,
+     "end": 172.494
+    },
+    {
+     "turn_id": "007-T0036",
+     "quote": "Yeah, so for per person, let me have a look here. So it does depend on the menu. you said you're interested in the classic brunch. So the cost for the classic brunch is $28 per person.",
+     "speaker": "Agent",
+     "start": 355.234,
+     "end": 381.854
+    },
+    {
+     "turn_id": "007-T0051",
+     "quote": "But that is the most that they do. That is the extent of their services. After that, you can pay an additional 60 euro for a full service, where basically our company we will set up the entire food table, provide serving utensils, keep food warm in chafing dishes, and clean up the setup afterwards, too.",
+     "speaker": "Agent",
+     "start": 517.298,
+     "end": 537.218
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent agreed to send an email confirmation and noted that payment would be collected on the day of the event.",
+   "evidence": [
+    {
+     "turn_id": "007-T0087",
+     "quote": "If you could send me an email just to confirm everything, that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.306,
+     "end": 881.566
+    },
+    {
+     "turn_id": "007-T0088",
+     "quote": "Of course, yeah, that's what we will do. And you'll all we'll also need to receive payment, but we can actually take that on the day. So there's no there's no rush, yeah, no over the phone payments.",
+     "speaker": "Agent",
+     "start": 879.346,
+     "end": 889.966
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the dietary requirements and confirmed the ability to accommodate them.",
+   "evidence": [
+    {
+     "turn_id": "007-T0012",
+     "quote": "Okay, beautiful.",
+     "speaker": "Agent",
+     "start": 128.434,
+     "end": 130.254
+    },
+    {
+     "turn_id": "007-T0013",
+     "quote": "Okay, can you just hold on there? I'll just make a note of that.",
+     "speaker": "Agent",
+     "start": 132.754,
+     "end": 145.694
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed they would send an email confirmation and arrange payment collection on the day.",
+   "evidence": [
+    {
+     "turn_id": "007-T0088",
+     "quote": "Of course, yeah, that's what we will do. And you'll all we'll also need to receive payment, but we can actually take that on the day.",
+     "speaker": "Agent",
+     "start": 879.346,
+     "end": 889.966
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The customer stated they needed time to decide on drink add-ons before finalizing the order.",
+   "evidence": [
+    {
+     "turn_id": "007-T0083",
+     "quote": "Yeah, that's fine. That's absolutely fine. I might have to think about the drinks and come back to you later on today. If that's Okay, cool.",
+     "speaker": "Customer",
+     "start": 854.018,
+     "end": 872.078
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear satisfaction and gratitude throughout the call, specifically praising the menu options, pricing, and service flexibility.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0028",
+     "quote": "I think the classic one shouldn't be best.",
+     "speaker": "Customer",
+     "start": 271.986,
+     "end": 276.046
+    },
+    {
+     "turn_id": "007-T0035",
+     "quote": "Okay, amazing. that's fantastic.",
+     "speaker": "Customer",
+     "start": 342.146,
+     "end": 355.406
+    },
+    {
+     "turn_id": "007-T0047",
+     "quote": "Okay, amazing.",
+     "speaker": "Customer",
+     "start": 476.93,
+     "end": 483.63
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual details about an upcoming event and asks standard informational questions without expressing strong emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0003",
+     "quote": "I wanted to get some more information because I have a birthday brunch this Saturday that's coming up and I wanna invite 15 people.",
+     "speaker": "Customer",
+     "start": 30.274,
+     "end": 51.534
+    },
+    {
+     "turn_id": "007-T0006",
+     "quote": "I know it's short notice. It's gonna be for about fifteen people.",
+     "speaker": "Customer",
+     "start": 67.778,
+     "end": 73.038
+    },
+    {
+     "turn_id": "007-T0008",
+     "quote": "Yeah, exactly. Like I wanted to ask you about what type of menu options that you have.",
+     "speaker": "Customer",
+     "start": 82.082,
+     "end": 93.102
+    }
+   ],
+   "window_turn_ids": [
+    "007-T0003",
+    "007-T0006",
+    "007-T0008"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses genuine enthusiasm and gratitude with specific phrases like 'fantastic' and 'Wonderful, amazing' regarding the confirmation process.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0087",
+     "quote": "that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.306,
+     "end": 881.566
+    },
+    {
+     "turn_id": "007-T0090",
+     "quote": "Wonderful, amazing.",
+     "speaker": "Customer",
+     "start": 890.386,
+     "end": 896.926
+    },
+    {
+     "turn_id": "007-T0090",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 890.386,
+     "end": 896.926
+    }
+   ],
+   "window_turn_ids": [
+    "007-T0083",
+    "007-T0087",
+    "007-T0090"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine enthusiasm and satisfaction by highlighting the value of the full-service option and confirming the customer's choice for a memorable birthday event.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "007-T0053",
+    "quote": "I don't know if you're anything like me, but I do hate cleaning up. And I think the 60 euro alone is definitely worth it, just for the cleanup aspect alone, I think.",
+    "speaker": "Agent",
+    "start": 537.218,
+    "end": 553.106
+   },
+   {
+    "turn_id": "007-T0074",
+    "quote": "Oh, of course, exactly. So you want to make it memorable, beautiful, okay, yeah.",
+    "speaker": "Agent",
+    "start": 758.13,
+    "end": 768.27
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

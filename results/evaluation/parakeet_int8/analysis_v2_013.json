@@ -1,0 +1,225 @@
+{
+ "call_id": "013",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted to know if specific bright yellow Converse sneakers were in stock at a store in Greenberg, Alabama.",
+   "evidence": [
+    {
+     "turn_id": "013-T0003",
+     "quote": "I was wondering if you have those in stock",
+     "speaker": "Customer",
+     "start": 21.218,
+     "end": 41.598
+    },
+    {
+     "turn_id": "013-T0030",
+     "quote": "I was wondering about can those be reserved for an in-store pickup?",
+     "speaker": "Customer",
+     "start": 315.49,
+     "end": 321.23
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent asked for the specific shoe model, stock number, and customer location to check inventory.",
+   "evidence": [
+    {
+     "turn_id": "013-T0004",
+     "quote": "Could you please be a little more specific?",
+     "speaker": "Agent",
+     "start": 42.69,
+     "end": 49.79
+    },
+    {
+     "turn_id": "013-T0031",
+     "quote": "I will have to check inventory, so I need to know where you are",
+     "speaker": "Agent",
+     "start": 321.698,
+     "end": 334.222
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed the item is available in size 10.5 and reserved it for pickup within 24 hours.",
+   "evidence": [
+    {
+     "turn_id": "013-T0036",
+     "quote": "Yes, we do have a store there. It is a super store, so we should have it.",
+     "speaker": "Agent",
+     "start": 362.674,
+     "end": 372.894
+    },
+    {
+     "turn_id": "013-T0040",
+     "quote": "Yes, so we could reserve those, but we can only do that for twenty four hours.",
+     "speaker": "Agent",
+     "start": 392.61,
+     "end": 405.07
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's request for stock availability and pickup reservation.",
+   "evidence": [
+    {
+     "turn_id": "013-T0029",
+     "quote": "All right, so we have this and you were wondering if we have this in store or available.",
+     "speaker": "Agent",
+     "start": 298.818,
+     "end": 315.038
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the ability to reserve the shoes for in-store pickup.",
+   "evidence": [
+    {
+     "turn_id": "013-T0040",
+     "quote": "Yes, so we could reserve those, but we can only do that for twenty four hours.",
+     "speaker": "Agent",
+     "start": 392.61,
+     "end": 405.07
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The agent confirmed the item is in stock and reserved it for the customer's pickup.",
+   "evidence": [
+    {
+     "turn_id": "013-T0040",
+     "quote": "Yes, so we could reserve those, but we can only do that for twenty four hours.",
+     "speaker": "Agent",
+     "start": 392.61,
+     "end": 405.07
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about the shoe model and stock number without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-T0010",
+     "quote": "hang on, let me just let me just look up something",
+     "speaker": "Customer",
+     "start": 128.578,
+     "end": 133.438
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides specific product details and asks about color availability without expressing dissatisfaction or frustration.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-T0003",
+     "quote": "I was wondering if you have those in stock",
+     "speaker": "Customer",
+     "start": 21.218,
+     "end": 41.598
+    },
+    {
+     "turn_id": "013-T0005",
+     "quote": "I was wondering if there was if it's available in other colors",
+     "speaker": "Customer",
+     "start": 50.818,
+     "end": 78.398
+    },
+    {
+     "turn_id": "013-T0005",
+     "quote": "because I was also looking for like bright blue and neon green and maybe electric pink",
+     "speaker": "Customer",
+     "start": 50.818,
+     "end": 78.398
+    }
+   ],
+   "window_turn_ids": [
+    "013-T0003",
+    "013-T0005",
+    "013-T0008"
+   ]
+  },
+  "ending": {
+   "label": "neutral",
+   "justification": "The customer provides plain information about sizing concerns and loyalty points without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-T0042",
+     "quote": "Well now also now just in case some things tend to run smaller than the actual sizes.",
+     "speaker": "Customer",
+     "start": 404.13,
+     "end": 421.55
+    },
+    {
+     "turn_id": "013-T0044",
+     "quote": "Okay. Well also something else. I'm a loyalty member for this particular store and I was wondering if my points could be applied to this purchase.",
+     "speaker": "Customer",
+     "start": 448.098,
+     "end": 456.958
+    }
+   ],
+   "window_turn_ids": [
+    "013-T0041",
+    "013-T0042",
+    "013-T0044"
+   ]
+  },
+  "change": "unchanged",
+  "change_note": "Both windows are labelled neutral."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent provides factual information and maintains a polite, professional demeanor throughout the call.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "013-T0002",
+    "quote": "Hello and thank you for calling the retail. How can I help you?",
+    "speaker": "Agent",
+    "start": 13.89,
+    "end": 20.11
+   },
+   {
+    "turn_id": "013-T0004",
+    "quote": "Could you please be a little more specific?",
+    "speaker": "Agent",
+    "start": 42.69,
+    "end": 49.79
+   },
+   {
+    "turn_id": "013-T0015",
+    "quote": "I don't think that any of our stock starts with an R.",
+    "speaker": "Agent",
+    "start": 159.25,
+    "end": 184.478
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

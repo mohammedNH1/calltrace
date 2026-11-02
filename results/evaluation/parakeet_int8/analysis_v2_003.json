@@ -1,0 +1,263 @@
+{
+ "call_id": "003",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer needed to schedule a follow-up appointment and ask about a prescription.",
+   "evidence": [
+    {
+     "turn_id": "003-T0003",
+     "quote": "Hi Morning. I need to schedule a follow up appointment with my doctor and also ask about prescription to hope you can help me both.",
+     "speaker": "Customer",
+     "start": 20.402,
+     "end": 32.382
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent confirmed they could help with scheduling the appointment and the prescription.",
+   "evidence": [
+    {
+     "turn_id": "003-T0004",
+     "quote": "Absolutely. Let's cancel the form first. Then we will cancel the prescription first. Can I can do and first I can pull up your location file and check out the first availability.",
+     "speaker": "Agent",
+     "start": 33.474,
+     "end": 46.414
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent explained the appointment time, required documents, and prescription pickup details.",
+   "evidence": [
+    {
+     "turn_id": "003-T0021",
+     "quote": "that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.",
+     "speaker": "Customer",
+     "start": 293.682,
+     "end": 308.942
+    },
+    {
+     "turn_id": "003-T0026",
+     "quote": "Absolutely. We just ask that you call at least twenty four hours before the appointment to reschedule. Because if you cancel or not show me less than twenty four hours notice, there's a twenty five dollars fee. but we know life happens. So we are flexible if it's an emergency. Just give us a call and we can find another slot that works.",
+     "speaker": "Agent",
+     "start": 376.098,
+     "end": 401.918
+    },
+    {
+     "turn_id": "003-T0018",
+     "quote": "We were in the pretty open. This is the control medication of the comments. She used to change these room by the end of the day. So we can send the script to comment from five of the day. We should be able to be tomorrow morning. And they will also call you when it's ready.",
+     "speaker": "Agent",
+     "start": 239.858,
+     "end": 264.062
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue regarding documents in turn 003-T0021.",
+   "evidence": [
+    {
+     "turn_id": "003-T0021",
+     "quote": "that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.",
+     "speaker": "Customer",
+     "start": 293.682,
+     "end": 308.942
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided specific next steps for the appointment and prescription in turn 003-T0021 and 003-T0026.",
+   "evidence": [
+    {
+     "turn_id": "003-T0021",
+     "quote": "that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.",
+     "speaker": "Customer",
+     "start": 293.682,
+     "end": 308.942
+    },
+    {
+     "turn_id": "003-T0026",
+     "quote": "Absolutely. We just ask that you call at least twenty four hours before the appointment to reschedule. Because if you cancel or not show me less than twenty four hours notice, there's a twenty five dollars fee. but we know life happens. So we are flexible if it's an emergency. Just give us a call and we can find another slot that works.",
+     "speaker": "Agent",
+     "start": 376.098,
+     "end": 401.918
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The customer confirmed understanding and the agent provided all necessary details for the appointment and prescription.",
+   "evidence": [
+    {
+     "turn_id": "003-T0027",
+     "quote": "Oh, that's a huge relief. I was worried I have to wait until the appointment. Do I need to pay anything a fort or just when I pick it up?",
+     "speaker": "Customer",
+     "start": 402.834,
+     "end": 431.774
+    },
+    {
+     "turn_id": "003-T0030",
+     "quote": "Okay, perfect. the reminder is helpful as well. Thank you so much. the appointment should be quick, right? I only have an hour lunch break. but I schedule it for eleven A. So I should be okay.",
+     "speaker": "Customer",
+     "start": 451.522,
+     "end": 467.422
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses relief and gratitude, explicitly stating they were 'so stressed before' and now feel 'so easy' after the appointment is arranged.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0019",
+     "quote": "Oh, that's a huge relief.",
+     "speaker": "Customer",
+     "start": 265.026,
+     "end": 276.846
+    },
+    {
+     "turn_id": "003-T0025",
+     "quote": "Oh good things you mentioned.",
+     "speaker": "Customer",
+     "start": 355.138,
+     "end": 375.278
+    },
+    {
+     "turn_id": "003-T0032",
+     "quote": "Oh perfect. Thank you so much, Brian. so easy. I was so stressed before. Thank you so much.",
+     "speaker": "Customer",
+     "start": 481.186,
+     "end": 490.046
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about their name, phone number, and work schedule without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0003",
+     "quote": "Hi Morning. I need to schedule a follow up appointment with my doctor and also ask about prescription to hope you can help me both.",
+     "speaker": "Customer",
+     "start": 20.402,
+     "end": 32.382
+    },
+    {
+     "turn_id": "003-T0005",
+     "quote": "Yes. my name is Lee Linda. C H A N G. And my teleph is May twelfth, ninety eighty eight. I really want to talk to her is Doctor Carter who met a month ago for a checkup. And she said I should come back for a follow up food.",
+     "speaker": "Customer",
+     "start": 47.73,
+     "end": 69.55
+    },
+    {
+     "turn_id": "003-T0006",
+     "quote": "we care about my work schedule is flexible in the mornings, or e or early in the afternoons. I can't do evenings though. So like nine A. M. to two PM on Monday to Friday we work.",
+     "speaker": "Customer",
+     "start": 91.874,
+     "end": 109.694
+    }
+   ],
+   "window_turn_ids": [
+    "003-T0003",
+    "003-T0005",
+    "003-T0006"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses relief and gratitude, explicitly stating they were 'so stressed before' and now find the process 'so easy.'",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0030",
+     "quote": "the reminder is helpful as well. Thank you so much.",
+     "speaker": "Customer",
+     "start": 451.522,
+     "end": 467.422
+    },
+    {
+     "turn_id": "003-T0032",
+     "quote": "Oh perfect. Thank you so much, Brian. so easy. I was so stressed before. Thank you so much.",
+     "speaker": "Customer",
+     "start": 481.186,
+     "end": 490.046
+    },
+    {
+     "turn_id": "003-T0034",
+     "quote": "Hello, thank you. Have a great day.",
+     "speaker": "Customer",
+     "start": 496.546,
+     "end": 500.126
+    }
+   ],
+   "window_turn_ids": [
+    "003-T0030",
+    "003-T0032",
+    "003-T0034"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine happiness and relief at successfully resolving the customer's concerns and scheduling the appointment.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "003-T0029",
+    "quote": "Good job.",
+    "speaker": "Agent",
+    "start": 432.242,
+    "end": 450.382
+   },
+   {
+    "turn_id": "003-T0031",
+    "quote": "it will be about thirty minutes max.",
+    "speaker": "Agent",
+    "start": 468.226,
+    "end": 481.646
+   },
+   {
+    "turn_id": "003-T0033",
+    "quote": "Happy to have Linda.",
+    "speaker": "Agent",
+    "start": 489.506,
+    "end": 496.046
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_acknowledged_issue: quote not found in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\"",
+   "agent_acknowledged_issue: quote not in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\". Exact turn text: \"Oh, well do. now about appointment on Tuesday. Do I need to bring any documents like my ID, insurance car, or the list of maths I'm taking?\"",
+   "concrete_action_or_next_step: quote not found in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\"",
+   "concrete_action_or_next_step: quote not in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\". Exact turn text: \"Oh, well do. now about appointment on Tuesday. Do I need to bring any documents like my ID, insurance car, or the list of maths I'm taking?\"",
+   "outcome_or_next_step: quote not found in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\"",
+   "outcome_or_next_step: quote not in 003-T0021: \"that's a great question. You will definitely need your insurance car. We will need to update that in our system because just to make sure it's still active. And also bring your ID is helpful too, but not mandatory if we already have it on file.\". Exact turn text: \"Oh, well do. now about appointment on Tuesday. Do I need to bring any documents like my ID, insurance car, or the list of maths I'm taking?\"",
+   "resolution: quote not found in 003-T0027: \"Oh, that's a huge relief. I was worried I have to wait until the appointment. Do I need to pay anything a fort or just when I pick it up?\"",
+   "resolution: quote not in 003-T0027: \"Oh, that's a huge relief. I was worried I have to wait until the appointment. Do I need to pay anything a fort or just when I pick it up?\". Exact turn text: \"Oh, that's all make sense. twenty four hours is easy to remember, yes. let me just recap to make sure I didn't miss anything. Tuesday at eleven AM with Dr. Carter. and I have to bring insurance car and blood pressure lock. if I will reschedule I have to within twenty four hours. can I get out?\""
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "11% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

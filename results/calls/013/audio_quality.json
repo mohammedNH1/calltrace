@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_US_Southern_Retail_1588125_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 562.044,
+  "peak": 0.9956,
+  "clipped_share": 0.0,
+  "active_share": 0.298,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05978,
+  "sha256": "543b6df8b9d7f62d800ee49b46d5a72fc383b76897105d3d7e7ff9b092200829"
+ },
+ "2": {
+  "file": "en_US_Southern_Retail_1588125_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 562.044,
+  "peak": 0.8064,
+  "clipped_share": 0.0,
+  "active_share": 0.2299,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.04708,
+  "sha256": "ce14c3b46ec43ca36167c6158f3ff6e8ed9e372c70c51978929c77ed5abed726"
+ }
+}

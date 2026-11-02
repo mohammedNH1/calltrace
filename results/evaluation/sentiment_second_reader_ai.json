@@ -1,0 +1,19 @@
+{
+  "reader": "AI second reader: the development assistant (Claude Opus 5.5). NOT a human annotation and NOT independent human validation. The reader had already seen the pipeline's labels, so this comparison is not blind.",
+  "items": [
+    {"call_id": "001", "overall": "mixed", "beginning": "negative", "ending": "positive", "resolution": "unresolved", "note": "Worried at first, then relieved and full of praise. The refund is still pending."},
+    {"call_id": "002", "overall": "neutral", "beginning": "neutral", "ending": "neutral", "resolution": "unresolved", "note": "Polite questions. 'Looking forward to it' reads as courtesy."},
+    {"call_id": "003", "overall": "positive", "beginning": "neutral", "ending": "positive", "resolution": "confirmed", "note": "'So easy', 'I was so stressed before' is tied to something specific."},
+    {"call_id": "004", "overall": "positive", "beginning": "neutral", "ending": "positive", "resolution": "unresolved", "note": "Repeated 'lovely', 'can't wait'. The deposit and booking are deferred to a call tomorrow."},
+    {"call_id": "005", "overall": "neutral", "beginning": "neutral", "ending": "neutral", "resolution": "unclear", "note": "Channels are out of sync, so order is unreliable. 'Quite helpful' reads as a polite close."},
+    {"call_id": "006", "overall": "neutral", "beginning": "neutral", "ending": "neutral", "resolution": "unresolved", "note": "Information questions throughout."},
+    {"call_id": "007", "overall": "positive", "beginning": "neutral", "ending": "positive", "resolution": "unresolved", "note": "'Fantastic', 'wonderful, amazing'. Drinks and the emailed confirmation are still open."},
+    {"call_id": "008", "overall": "mixed", "beginning": "negative", "ending": "positive", "resolution": "confirmed", "note": "'Pretty annoyed' at first; the reference has 'no ads this time' before the close."},
+    {"call_id": "009", "overall": "positive", "beginning": "neutral", "ending": "positive", "resolution": "confirmed", "note": "'That puts my mind at ease' is specific. Pickup was scheduled in the call."},
+    {"call_id": "010", "overall": "mixed", "beginning": "neutral", "ending": "positive", "resolution": "confirmed", "note": "Complains about the installer and sales calls, then calls the agent a lifesaver. Hard audio."},
+    {"call_id": "011", "overall": "mixed", "beginning": "neutral", "ending": "positive", "resolution": "unresolved", "note": "'I'm not stupid' mid-call and 'really excited' near the end."},
+    {"call_id": "012", "overall": "positive", "beginning": "neutral", "ending": "positive", "resolution": "confirmed", "note": "The opening is a plain request; praise comes later."},
+    {"call_id": "013", "overall": "neutral", "beginning": "neutral", "ending": "neutral", "resolution": "unresolved", "note": "Friendly detail questions. The last question gets no answer before the recording ends."},
+    {"call_id": "014", "overall": "mixed", "beginning": "negative", "ending": "neutral", "resolution": "unresolved", "note": "'I'm upset and angry' at first; calm afterwards. The recovery result is not confirmed."}
+  ]
+}

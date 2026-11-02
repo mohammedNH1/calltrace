@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_SG_Telecom_1586744_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 888.0,
+  "peak": 0.9953,
+  "clipped_share": 0.0,
+  "active_share": 0.3455,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06181,
+  "sha256": "3a5eb129a1ae80241a610f40b9f216f632c5d1d299105960aede23697ad95bdb"
+ },
+ "2": {
+  "file": "en_SG_Telecom_1586744_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 888.0,
+  "peak": 0.7385,
+  "clipped_share": 0.0,
+  "active_share": 0.3589,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05439,
+  "sha256": "c3a17e69eda57c621e6dd10ed39ce541c314f4b89d620f8933b62b3faea6a27c"
+ }
+}

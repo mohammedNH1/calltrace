@@ -1,0 +1,256 @@
+{
+ "call_id": "010",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer reported Wi-Fi setup issues after installers arrived and asked for assistance.",
+   "evidence": [
+    {
+     "turn_id": "010-R0009",
+     "quote": "I just wanna call in because I'm having some issues setting up my wi-fi here at home",
+     "speaker": "Customer",
+     "start": 23.04,
+     "end": 34.9
+    },
+    {
+     "turn_id": "010-R0011",
+     "quote": "And now my wi-fi is having some issues while I'm setting it up can you assist me on this",
+     "speaker": "Customer",
+     "start": 34.9,
+     "end": 43.64
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent guided the customer through resetting the modem and checking the system status.",
+   "evidence": [
+    {
+     "turn_id": "010-R0014",
+     "quote": "Have you tried switching on and off for the switch for the modem",
+     "speaker": "Agent",
+     "start": 52.99,
+     "end": 60.09
+    },
+    {
+     "turn_id": "010-R0032",
+     "quote": "Yeah. You look at your modem, right, then there's actually a reset button to it",
+     "speaker": "Agent",
+     "start": 101.14,
+     "end": 107.59
+    },
+    {
+     "turn_id": "010-R0039",
+     "quote": "No, when you press the reset, right, then you can hold it for, like, ten seconds",
+     "speaker": "Agent",
+     "start": 128.09,
+     "end": 134.19
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed the Wi-Fi was working but agreed to escalate the installer complaint via email.",
+   "evidence": [
+    {
+     "turn_id": "010-R0074",
+     "quote": "So, Mr. Bakkar, I can see that from your account, it's actually working",
+     "speaker": "Agent",
+     "start": 249.39,
+     "end": 259.69
+    },
+    {
+     "turn_id": "010-R0236",
+     "quote": "And I hope you, I need you to put down in your notes somewhere to actually escalate and bring this matter up",
+     "speaker": "Customer",
+     "start": 831.04,
+     "end": 843.84
+    },
+    {
+     "turn_id": "010-R0240",
+     "quote": "Yeah, I can, I can write an email to feedback as well",
+     "speaker": "Agent",
+     "start": 851.64,
+     "end": 854.89
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue and confirmed the Wi-Fi status.",
+   "evidence": [
+    {
+     "turn_id": "010-R0011",
+     "quote": "And now my wi-fi is having some issues while I'm setting it up can you assist me on this",
+     "speaker": "Customer",
+     "start": 34.9,
+     "end": 43.64
+    },
+    {
+     "turn_id": "010-R0020",
+     "quote": "Yes, correct",
+     "speaker": "Agent",
+     "start": 70.94,
+     "end": 71.74
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided specific steps to reset the modem and agreed to send an email about the installer.",
+   "evidence": [
+    {
+     "turn_id": "010-R0023",
+     "quote": "Yeah, wait for ten seconds after you off, before you turn it on",
+     "speaker": "Agent",
+     "start": 79.09,
+     "end": 84.14
+    },
+    {
+     "turn_id": "010-R0240",
+     "quote": "Yeah, I can, I can write an email to feedback as well",
+     "speaker": "Agent",
+     "start": 851.64,
+     "end": 854.89
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The Wi-Fi issue was resolved by resetting the modem, and the installer complaint was acknowledged for follow-up.",
+   "evidence": [
+    {
+     "turn_id": "010-R0076",
+     "quote": "Yeah, the wi-fi connection is actually working",
+     "speaker": "Agent",
+     "start": 261.94,
+     "end": 264.49
+    },
+    {
+     "turn_id": "010-R0249",
+     "quote": "Thank you so much, Mr. Bakkar",
+     "speaker": "Agent",
+     "start": 878.84,
+     "end": 881.09
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses frustration with the installer and initial service delays but shows relief and gratitude after the technical issue is resolved and the football package is added.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-R0006",
+     "quote": "Yeah, cool. No, it takes so long to pick up my phone, loh, you know, it's okay, loh.",
+     "speaker": "Customer",
+     "start": 12.39,
+     "end": 16.69
+    },
+    {
+     "turn_id": "010-R0080",
+     "quote": "I see, lah, your installer, the wire are never put properly. Do it, lah, I'm appreciate it, I wanna send email .",
+     "speaker": "Customer",
+     "start": 268.44,
+     "end": 278.34
+    },
+    {
+     "turn_id": "010-R0175",
+     "quote": "Ohh you all are really milking your customers, huh.",
+     "speaker": "Customer",
+     "start": 619.84,
+     "end": 624.44
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer uses polite filler words and acknowledges the call without expressing clear satisfaction, frustration, or specific complaints.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-R0006",
+     "quote": "Yeah, cool. No, it takes so long to pick up my phone, loh, you know, it's okay, loh.",
+     "speaker": "Customer",
+     "start": 12.39,
+     "end": 16.69
+    },
+    {
+     "turn_id": "010-R0007",
+     "quote": "Ai. Okay, now, ma anyway (uh,) ya, it's okay, it's okay.",
+     "speaker": "Customer",
+     "start": 17.79,
+     "end": 22.79
+    }
+   ],
+   "window_turn_ids": [
+    "010-R0004",
+    "010-R0006",
+    "010-R0007"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude by calling the agent a 'lifesaver' and stating they were helped a lot.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-R0245",
+     "quote": "great. I mean great, Ms. Natalie, I think you help me a lot. Basically you you've been a lifesaver here.",
+     "speaker": "Customer",
+     "start": 862.14,
+     "end": 873.89
+    }
+   ],
+   "window_turn_ids": [
+    "010-R0245",
+    "010-R0248",
+    "010-R0252"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses relief and satisfaction at resolving the customer's technical issue and successfully adding the football package.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "010-R0246",
+    "quote": "Ohh, it's okay.",
+    "speaker": "Agent",
+    "start": 864.54,
+    "end": 864.94
+   },
+   {
+    "turn_id": "010-R0249",
+    "quote": "Thank you so much, Mr. Bakkar.",
+    "speaker": "Agent",
+    "start": 878.84,
+    "end": 881.09
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_sentiment: quote not found in 010-R0246: \"Ohh, it's okay.\"",
+   "sentiment: quote not in 010-R0246: \"Ohh, it's okay.\". Exact turn text: 'Yeah.'"
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

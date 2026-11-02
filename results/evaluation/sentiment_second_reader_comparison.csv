@@ -1,0 +1,15 @@
+﻿call_id,overall_pipeline,overall_second_reader,beginning_pipeline,beginning_second_reader,ending_pipeline,ending_second_reader,resolution_pipeline,resolution_second_reader,second_reader_note
+001,positive,mixed,negative,negative,positive,positive,unresolved,unresolved,"Worried at first, then relieved and full of praise. The refund is still pending."
+002,positive,neutral,neutral,neutral,positive,neutral,unresolved,unresolved,Polite questions. 'Looking forward to it' reads as courtesy.
+003,positive,positive,neutral,neutral,positive,positive,confirmed,confirmed,"'So easy', 'I was so stressed before' is tied to something specific."
+004,positive,positive,neutral,neutral,positive,positive,confirmed,unresolved,"Repeated 'lovely', 'can't wait'. The deposit and booking are deferred to a call tomorrow."
+005,positive,neutral,neutral,neutral,positive,neutral,unresolved,unclear,"Channels are out of sync, so order is unreliable. 'Quite helpful' reads as a polite close."
+006,positive,neutral,neutral,neutral,neutral,neutral,unresolved,unresolved,Information questions throughout.
+007,positive,positive,neutral,neutral,positive,positive,unresolved,unresolved,"'Fantastic', 'wonderful, amazing'. Drinks and the emailed confirmation are still open."
+008,positive,mixed,negative,negative,positive,positive,confirmed,confirmed,'Pretty annoyed' at first; the reference has 'no ads this time' before the close.
+009,positive,positive,neutral,neutral,positive,positive,confirmed,confirmed,'That puts my mind at ease' is specific. Pickup was scheduled in the call.
+010,mixed,mixed,neutral,neutral,positive,positive,confirmed,confirmed,"Complains about the installer and sales calls, then calls the agent a lifesaver. Hard audio."
+011,mixed,mixed,neutral,neutral,positive,positive,unresolved,unresolved,'I'm not stupid' mid-call and 'really excited' near the end.
+012,positive,positive,positive,neutral,positive,positive,confirmed,confirmed,The opening is a plain request; praise comes later.
+013,neutral,neutral,neutral,neutral,neutral,neutral,unresolved,unresolved,Friendly detail questions. The last question gets no answer before the recording ends.
+014,negative,mixed,negative,negative,neutral,neutral,unresolved,unresolved,'I'm upset and angry' at first; calm afterwards. The recovery result is not confirmed.

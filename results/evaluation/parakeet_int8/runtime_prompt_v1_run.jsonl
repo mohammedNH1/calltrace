@@ -1,0 +1,15 @@
+{"step": "asr_model_load", "seconds": 6.02}
+{"step": "call", "call_id": "001", "audio_s": 633.177, "transcription_s": 106.67, "analysis_s": 41.99, "turns": 59, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "002", "audio_s": 690.862, "transcription_s": 69.83, "analysis_s": 49.0, "turns": 41, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "003", "audio_s": 519.861, "transcription_s": 60.36, "analysis_s": 48.92, "turns": 36, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "004", "audio_s": 624.467, "transcription_s": 73.45, "analysis_s": 54.52, "turns": 96, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "005", "audio_s": 358.734, "transcription_s": 36.11, "analysis_s": 0.15, "turns": 40, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "006", "audio_s": 582.36, "transcription_s": 86.55, "analysis_s": 37.11, "turns": 50, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "007", "audio_s": 902.865, "transcription_s": 114.8, "analysis_s": 42.76, "turns": 91, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "008", "audio_s": 586.133, "transcription_s": 63.74, "analysis_s": 29.66, "turns": 66, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "009", "audio_s": 781.155, "transcription_s": 73.02, "analysis_s": 40.86, "turns": 47, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "010", "audio_s": 888.0, "transcription_s": 93.24, "analysis_s": 62.68, "turns": 126, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "011", "audio_s": 390.032, "transcription_s": 44.96, "analysis_s": 32.01, "turns": 36, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "012", "audio_s": 400.303, "transcription_s": 35.09, "analysis_s": 34.49, "turns": 31, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "013", "audio_s": 562.044, "transcription_s": 60.37, "analysis_s": 35.39, "turns": 51, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}
+{"step": "call", "call_id": "014", "audio_s": 546.393, "transcription_s": 50.77, "analysis_s": 33.31, "turns": 55, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}

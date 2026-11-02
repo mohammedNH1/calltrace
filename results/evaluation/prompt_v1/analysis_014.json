@@ -1,0 +1,210 @@
+{
+ "call_id": "014",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer's laptop enters a continuous loop after a system update.",
+   "evidence": [
+    {
+     "turn_id": "014-T0006",
+     "quote": "The eyes switch on my laptop it goes in a continuous loop. It switches on, it says starting and then it goes off and then the cycle starts again.",
+     "speaker": "Customer",
+     "start": 29.218,
+     "end": 52.606
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent instructed the customer to perform diagnostic steps and then initiate a system recovery.",
+   "evidence": [
+    {
+     "turn_id": "014-T0024",
+     "quote": "you actually have to hold the power key. So when you have when you press down on the power key, you hold it for roughly ten seconds, then it's supposed to bring you through to the advanced setup menu.",
+     "speaker": "Agent",
+     "start": 239.826,
+     "end": 261.326
+    },
+    {
+     "turn_id": "014-T0030",
+     "quote": "Do you see Okay. So if you can click on that, I'll just first of all I just need to inform you that once you click recovery.",
+     "speaker": "Agent",
+     "start": 296.354,
+     "end": 323.246
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The customer agreed to perform the recovery steps and will contact the agent again if the issue persists.",
+   "evidence": [
+    {
+     "turn_id": "014-T0038",
+     "quote": "Okay, so I'm just gonna continue clicking on the recovery for the latest date. The previous date. I will that now. I would do would like to just make a note of your name should I have any further queries if this doesn't work so that I can get back to you.",
+     "speaker": "Customer",
+     "start": 389.842,
+     "end": 411.022
+    },
+    {
+     "turn_id": "014-T0046",
+     "quote": "That is correct. So when you when you do phone in and I'm not in the office, then you can any one of our technicians will be able to help you with that reference number.",
+     "speaker": "Agent",
+     "start": 440.642,
+     "end": 468.382
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the problem and offered assistance.",
+   "evidence": [
+    {
+     "turn_id": "014-T0005",
+     "quote": "I'm sorry to hear that, ma'am. How can I assist you?",
+     "speaker": "Agent",
+     "start": 24.962,
+     "end": 27.902
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided a reference number and specific repair instructions.",
+   "evidence": [
+    {
+     "turn_id": "014-T0039",
+     "quote": "And can I give you a reference number? Okay, so it's L G U two four two seven one zero.",
+     "speaker": "Agent",
+     "start": 410.274,
+     "end": 429.214
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unclear",
+   "note": "The customer initiated the recovery process but the call ended before the result was confirmed.",
+   "evidence": []
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "negative",
+   "justification": "The customer expresses anger, fear of causing damage, and frustration about their inability to use the laptop.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "014-T0004",
+     "quote": "I'm upset and angry.",
+     "speaker": "Customer",
+     "start": 21.938,
+     "end": 25.758
+    },
+    {
+     "turn_id": "014-T0015",
+     "quote": "I'm just scared that I do something wrong and then I cause more damage.",
+     "speaker": "Customer",
+     "start": 136.13,
+     "end": 158.83
+    },
+    {
+     "turn_id": "014-T0035",
+     "quote": "there was something else that was also of concern.",
+     "speaker": "Customer",
+     "start": 359.938,
+     "end": 386.718
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "negative",
+   "justification": "The customer explicitly states they are 'upset and angry' and describes a frustrating technical issue with their laptop.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "014-T0004",
+     "quote": "I'm upset and angry.",
+     "speaker": "Customer",
+     "start": 21.938,
+     "end": 25.758
+    },
+    {
+     "turn_id": "014-T0006",
+     "quote": "The eyes switch on my laptop it goes in a continuous loop.",
+     "speaker": "Customer",
+     "start": 29.218,
+     "end": 52.606
+    }
+   ],
+   "window_turn_ids": [
+    "014-T0002",
+    "014-T0004",
+    "014-T0006"
+   ]
+  },
+  "ending": {
+   "label": "negative",
+   "justification": "The customer expresses a desire to avoid future contact by stating they are 'hopeful not' to speak again.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "014-T0053",
+     "quote": "Hopeful not.",
+     "speaker": "Customer",
+     "start": 522.642,
+     "end": 527.982
+    }
+   ],
+   "window_turn_ids": [
+    "014-T0044",
+    "014-T0050",
+    "014-T0053"
+   ]
+  },
+  "change": "unchanged",
+  "change_note": "Both windows are labelled negative."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent maintains a professional, informative tone throughout the troubleshooting process without expressing strong positive or negative emotions.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "014-T0003",
+    "quote": "Hi, Sarah, how are you?",
+    "speaker": "Agent",
+    "start": 19.042,
+    "end": 22.062
+   },
+   {
+    "turn_id": "014-T0005",
+    "quote": "I'm sorry to hear that, ma'am. How can I assist you?",
+    "speaker": "Agent",
+    "start": 24.962,
+    "end": 27.902
+   },
+   {
+    "turn_id": "014-T0007",
+    "quote": "just quickly going to run you through some steps, if I may.",
+    "speaker": "Agent",
+    "start": 53.234,
+    "end": 77.054
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

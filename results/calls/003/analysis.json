@@ -1,0 +1,260 @@
+{
+ "call_id": "003",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer needed to schedule a follow-up appointment and request a prescription review.",
+   "evidence": [
+    {
+     "turn_id": "003-T0003",
+     "quote": "I need to schedule a follow up appointment with my doctor and also ask about prescription review.",
+     "speaker": "Customer",
+     "start": 20.322,
+     "end": 32.382
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent collected patient details, checked availability, and booked the appointment.",
+   "evidence": [
+    {
+     "turn_id": "003-T0004",
+     "quote": "First, can I get your full name and date of birth? That way I can put up your patient file and check your doctor's availability.",
+     "speaker": "Agent",
+     "start": 33.314,
+     "end": 46.414
+    },
+    {
+     "turn_id": "003-T0012",
+     "quote": "let me lock that in right now. Yep. Tuesday eleven AM with Dr. Carter is yours.",
+     "speaker": "Agent",
+     "start": 155.25,
+     "end": 172.11
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The appointment was confirmed for Tuesday at 11 AM, and the prescription refill process was initiated.",
+   "evidence": [
+    {
+     "turn_id": "003-T0012",
+     "quote": "I will add that to your file. you get a confirmation text in a few minutes with the address and a reminder to arrive ten minutes early.",
+     "speaker": "Agent",
+     "start": 155.25,
+     "end": 172.11
+    },
+    {
+     "turn_id": "003-T0020",
+     "quote": "we can send the script to community firms by five PM today. You should be able to pick it up tomorrow morning.",
+     "speaker": "Agent",
+     "start": 249.538,
+     "end": 264.062
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the prescription issue and confirmed the refill process.",
+   "evidence": [
+    {
+     "turn_id": "003-T0014",
+     "quote": "now about the prescription. Dr. Carter prescribed me blood pressure meds last month and I only have three doses left. I don't wanna run out before the appointment, so can I get reviewed?",
+     "speaker": "Customer",
+     "start": 173.698,
+     "end": 194.238
+    },
+    {
+     "turn_id": "003-T0015",
+     "quote": "Hm, I understand. We don't want you to miss any doses. Let me check your prescription history.",
+     "speaker": "Agent",
+     "start": 193.762,
+     "end": 213.662
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "A specific appointment time was booked and a prescription refill was scheduled.",
+   "evidence": [
+    {
+     "turn_id": "003-T0012",
+     "quote": "Tuesday eleven AM with Dr. Carter is yours.",
+     "speaker": "Agent",
+     "start": 155.25,
+     "end": 172.11
+    },
+    {
+     "turn_id": "003-T0020",
+     "quote": "we can send the script to community firms by five PM today.",
+     "speaker": "Agent",
+     "start": 249.538,
+     "end": 264.062
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "Both the appointment and the prescription refill process were fully addressed by the end of the call.",
+   "evidence": [
+    {
+     "turn_id": "003-T0033",
+     "quote": "You nail it. Great job.",
+     "speaker": "Agent",
+     "start": 432.242,
+     "end": 450.382
+    },
+    {
+     "turn_id": "003-T0036",
+     "quote": "Oh perfect. Thank you so much, Brian. you made it so easy.",
+     "speaker": "Customer",
+     "start": 481.186,
+     "end": 490.206
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses relief, gratitude, and satisfaction with the service provided.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0011",
+     "quote": "Tuesday at eleven sounds perfect.",
+     "speaker": "Customer",
+     "start": 142.898,
+     "end": 155.198
+    },
+    {
+     "turn_id": "003-T0014",
+     "quote": "Awesome. Thank you so much.",
+     "speaker": "Customer",
+     "start": 173.698,
+     "end": 194.238
+    },
+    {
+     "turn_id": "003-T0021",
+     "quote": "Oh, that's a huge relief.",
+     "speaker": "Customer",
+     "start": 264.866,
+     "end": 276.846
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about their schedule and preferences without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0003",
+     "quote": "Hope you can help me both.",
+     "speaker": "Customer",
+     "start": 20.322,
+     "end": 32.382
+    },
+    {
+     "turn_id": "003-T0005",
+     "quote": "Yes. my name is Li Linda Jung Z H A N G and my date of birth is may twelfth, nineteen eighty eight.",
+     "speaker": "Customer",
+     "start": 47.65,
+     "end": 69.55
+    },
+    {
+     "turn_id": "003-T0007",
+     "quote": "weekday are better. My work schedule is flexible in the mornings, or e or earlier afternoons.",
+     "speaker": "Customer",
+     "start": 91.714,
+     "end": 109.694
+    }
+   ],
+   "window_turn_ids": [
+    "003-T0003",
+    "003-T0005",
+    "003-T0007"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief, stating the appointment process was easy and they were previously stressed.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-T0034",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 451.362,
+     "end": 467.422
+    },
+    {
+     "turn_id": "003-T0036",
+     "quote": "you made it so easy. I was so stressed before.",
+     "speaker": "Customer",
+     "start": 481.186,
+     "end": 490.206
+    },
+    {
+     "turn_id": "003-T0036",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 481.186,
+     "end": 490.206
+    }
+   ],
+   "window_turn_ids": [
+    "003-T0034",
+    "003-T0036",
+    "003-T0038"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine satisfaction and relief at successfully resolving the customer's appointment and prescription concerns.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "003-T0033",
+    "quote": "You nail it. Great job.",
+    "speaker": "Agent",
+    "start": 432.242,
+    "end": 450.382
+   },
+   {
+    "turn_id": "003-T0035",
+    "quote": "it will be about thirty minutes max.",
+    "speaker": "Agent",
+    "start": 468.226,
+    "end": 481.726
+   },
+   {
+    "turn_id": "003-T0037",
+    "quote": "Happy to help Linda.",
+    "speaker": "Agent",
+    "start": 489.426,
+    "end": 496.046
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

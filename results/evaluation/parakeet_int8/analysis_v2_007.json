@@ -1,0 +1,243 @@
+{
+ "call_id": "007",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "Sarah Collane wanted to inquire about catering for a birthday brunch for 15 people on Saturday.",
+   "evidence": [
+    {
+     "turn_id": "007-T0003",
+     "quote": "I wanted to get some more information because I have a birthday brunch this Saturday that's coming up and I want to invite 15 people.",
+     "speaker": "Customer",
+     "start": 30.274,
+     "end": 51.534
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent explained menu options, dietary accommodations, pricing, and service details.",
+   "evidence": [
+    {
+     "turn_id": "007-T0015",
+     "quote": "So all of our menus can be modified for dietary requirements, which is Great news for you too.",
+     "speaker": "Agent",
+     "start": 155.554,
+     "end": 172.814
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent agreed to send an email confirmation and noted the customer might return later regarding drinks.",
+   "evidence": [
+    {
+     "turn_id": "007-T0086",
+     "quote": "just this if you could send me an email just to confirm everything, that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.386,
+     "end": 881.566
+    },
+    {
+     "turn_id": "007-T0081",
+     "quote": "I might have to think about the drinks and come back to you later on today.",
+     "speaker": "Customer",
+     "start": 854.018,
+     "end": 871.678
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the dietary needs and confirmed the menu choice.",
+   "evidence": [
+    {
+     "turn_id": "007-T0012",
+     "quote": "Okay, beautiful.",
+     "speaker": "Agent",
+     "start": 128.354,
+     "end": 130.254
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent offered to calculate the total cost and agreed to send an email confirmation.",
+   "evidence": [
+    {
+     "turn_id": "007-T0037",
+     "quote": "would you like me to just work that out here for you real quickly? Okay, so",
+     "speaker": "Agent",
+     "start": 388.93,
+     "end": 418.59
+    },
+    {
+     "turn_id": "007-T0087",
+     "quote": "Of course, yeah, that's what we will do.",
+     "speaker": "Agent",
+     "start": 879.346,
+     "end": 889.886
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The customer indicated they would need to think about the drinks package and return later.",
+   "evidence": [
+    {
+     "turn_id": "007-T0081",
+     "quote": "I might have to think about the drinks and come back to you later on today.",
+     "speaker": "Customer",
+     "start": 854.018,
+     "end": 871.678
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear satisfaction and gratitude throughout the call, specifically praising the gluten-free options and the setup service.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0033",
+     "quote": "Okay, amazing. that's fantastic.",
+     "speaker": "Customer",
+     "start": 342.146,
+     "end": 355.246
+    },
+    {
+     "turn_id": "007-T0046",
+     "quote": "Okay, amazing.",
+     "speaker": "Customer",
+     "start": 477.01,
+     "end": 483.23
+    },
+    {
+     "turn_id": "007-T0053",
+     "quote": "Okay, I agree. I would like to do this...",
+     "speaker": "Customer",
+     "start": 556.386,
+     "end": 572.206
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual details about an upcoming event and asks standard informational questions.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0003",
+     "quote": "I wanted to get some more information because I have a birthday brunch this Saturday that's coming up and I want to invite 15 people.",
+     "speaker": "Customer",
+     "start": 30.274,
+     "end": 51.534
+    },
+    {
+     "turn_id": "007-T0006",
+     "quote": "Yeah, it's her birthday party. it's happening this Saturday, I know it's for noticed. It's gonna be for about fifteen people.",
+     "speaker": "Customer",
+     "start": 63.938,
+     "end": 73.038
+    },
+    {
+     "turn_id": "007-T0008",
+     "quote": "Yeah, exactly. Like I wanted to ask you about what type of menu options that you have. and like what you can do. Yeah.",
+     "speaker": "Customer",
+     "start": 82.162,
+     "end": 92.702
+    }
+   ],
+   "window_turn_ids": [
+    "007-T0003",
+    "007-T0006",
+    "007-T0008"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses genuine enthusiasm and gratitude with specific phrases like 'fantastic', 'wonderful', 'amazing', and 'Thank you so much'.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-T0086",
+     "quote": "that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.386,
+     "end": 881.566
+    },
+    {
+     "turn_id": "007-T0089",
+     "quote": "Wonderful, amazing.",
+     "speaker": "Customer",
+     "start": 890.386,
+     "end": 896.846
+    },
+    {
+     "turn_id": "007-T0089",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 890.386,
+     "end": 896.846
+    }
+   ],
+   "window_turn_ids": [
+    "007-T0081",
+    "007-T0086",
+    "007-T0089"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses enthusiasm and satisfaction by recommending the full service package and confirming the customer's choice of the deluxe decor.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "007-T0052",
+    "quote": "I do recommend this.",
+    "speaker": "Agent",
+    "start": 537.218,
+    "end": 555.406
+   },
+   {
+    "turn_id": "007-T0052",
+    "quote": "I think the sixty euro alone is definitely worth it.",
+    "speaker": "Agent",
+    "start": 537.218,
+    "end": 555.406
+   },
+   {
+    "turn_id": "007-T0072",
+    "quote": "of course, exactly.",
+    "speaker": "Agent",
+    "start": 759.09,
+    "end": 768.19
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "concrete_action_or_next_step: quote not found in 007-T0037: 'would you like me to just work that out here for you real quickly? Okay, so'",
+   "concrete_action_or_next_step: quote not in 007-T0037: 'would you like me to just work that out here for you real quickly? Okay, so'. Exact turn text: \"So we have 15 people times 28. So that would be 420 euro. Okay. then we're looking at 420 euro. And then what we are actually gonna do is we're gonna take away 10% from that. So then we take that away. So it would come up to a total of 378 euro. Is that okay with you?\""
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_CN_Health_1584519_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 519.861,
+  "peak": 0.993,
+  "clipped_share": 0.0,
+  "active_share": 0.3759,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.08293,
+  "sha256": "0304c8960c2e9de9dd983a1df8ce44d55ec6411f46584d3af72fe70a35a4d69f"
+ },
+ "2": {
+  "file": "en_CN_Health_1584519_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 519.861,
+  "peak": 1.0,
+  "clipped_share": 1.6e-05,
+  "active_share": 0.2945,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.12268,
+  "sha256": "b06c76d6382010d3189478d390852991e716e405fb2d732548e5a09d54f00484"
+ }
+}

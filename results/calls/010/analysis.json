@@ -1,0 +1,248 @@
+{
+ "call_id": "010",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer reported Wi-Fi setup issues and later requested to add football channels.",
+   "evidence": [
+    {
+     "turn_id": "010-T0006",
+     "quote": "But then now my wifi is having some issues while I'm setting it up.",
+     "speaker": "Customer",
+     "start": 30.978,
+     "end": 47.038
+    },
+    {
+     "turn_id": "010-T0072",
+     "quote": "Like football, I want to add football.",
+     "speaker": "Customer",
+     "start": 509.362,
+     "end": 512.302
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent guided the customer through a modem reset and later offered to send feedback about the installer.",
+   "evidence": [
+    {
+     "turn_id": "010-T0022",
+     "quote": "No, when you press the reset right, then you can hold it for like ten seconds.",
+     "speaker": "Agent",
+     "start": 127.938,
+     "end": 146.51
+    },
+    {
+     "turn_id": "010-T0120",
+     "quote": "yeah, I can I can write an email to feedback as well. You want me to help you with that?",
+     "speaker": "Agent",
+     "start": 851.426,
+     "end": 858.766
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The customer confirmed the Wi-Fi works after the reset, and the agent agreed to send an email regarding the installer.",
+   "evidence": [
+    {
+     "turn_id": "010-T0047",
+     "quote": "it's working now.",
+     "speaker": "Agent",
+     "start": 286.626,
+     "end": 289.406
+    },
+    {
+     "turn_id": "010-T0121",
+     "quote": "Yeah, please do, please do, okay? Yeah, of course of course.",
+     "speaker": "Customer",
+     "start": 855.01,
+     "end": 873.79
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue and provided solutions.",
+   "evidence": [
+    {
+     "turn_id": "010-T0020",
+     "quote": "We can try different options to see whether it works.",
+     "speaker": "Agent",
+     "start": 115.778,
+     "end": 122.478
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the next step would be sending an email about the installer.",
+   "evidence": [
+    {
+     "turn_id": "010-T0120",
+     "quote": "yeah, I can I can write an email to feedback as well.",
+     "speaker": "Agent",
+     "start": 851.426,
+     "end": 858.766
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The Wi-Fi issue was resolved, and the request for installer feedback was accepted.",
+   "evidence": [
+    {
+     "turn_id": "010-T0047",
+     "quote": "it's working now.",
+     "speaker": "Agent",
+     "start": 286.626,
+     "end": 289.406
+    },
+    {
+     "turn_id": "010-T0122",
+     "quote": "Yes, I can do that.",
+     "speaker": "Agent",
+     "start": 861.106,
+     "end": 865.966
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses frustration over the installer and the cost of the football package, but concludes with gratitude for the agent's help.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0034",
+     "quote": "still my I still cannot access my Wi Fi. Check from your system lah. Check from your system. Is my Wi-Fi actually working or maybe my installer, does not your installer come never fixed properly or what?",
+     "speaker": "Customer",
+     "start": 194.882,
+     "end": 215.742
+    },
+    {
+     "turn_id": "010-T0090",
+     "quote": "pet seat. No promotion.",
+     "speaker": "Customer",
+     "start": 642.37,
+     "end": 645.39
+    },
+    {
+     "turn_id": "010-T0094",
+     "quote": "Your sound has returned now. Maybe you want to check your snowball many years.",
+     "speaker": "Customer",
+     "start": 657.762,
+     "end": 661.502
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer states they are having issues but proceeds with a calm, cooperative tone to request assistance.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0003",
+     "quote": "I just want to call in because I'm having some issues setting up my Wi-Fi here at home",
+     "speaker": "Customer",
+     "start": 8.658,
+     "end": 30.798
+    },
+    {
+     "turn_id": "010-T0006",
+     "quote": "So can you assist me on this one? Okay.",
+     "speaker": "Customer",
+     "start": 30.978,
+     "end": 47.038
+    },
+    {
+     "turn_id": "010-T0009",
+     "quote": "yes, I'm ready about it.",
+     "speaker": "Customer",
+     "start": 50.578,
+     "end": 52.398
+    }
+   ],
+   "window_turn_ids": [
+    "010-T0003",
+    "010-T0006",
+    "010-T0009"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief, stating the agent helped them a lot and calling them a 'life savior.'",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0121",
+     "quote": "Ms. Natalie, I think you you've helped me a lot. you'd be a life savior",
+     "speaker": "Customer",
+     "start": 855.01,
+     "end": 873.79
+    },
+    {
+     "turn_id": "010-T0124",
+     "quote": "Thank you so much. Okay, mama. You too, you too, you have a good you too. Goodbye.",
+     "speaker": "Customer",
+     "start": 875.97,
+     "end": 888.19
+    }
+   ],
+   "window_turn_ids": [
+    "010-T0118",
+    "010-T0121",
+    "010-T0124"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent's turns consist of standard procedural information, polite acknowledgments, and routine service confirmations without expressing strong personal emotion.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "010-T0002",
+    "quote": "Hi, this is call yeah, this is from Singtel.",
+    "speaker": "Agent",
+    "start": 3.282,
+    "end": 8.222
+   },
+   {
+    "turn_id": "010-T0005",
+    "quote": "Yes, sorry for waiting.",
+    "speaker": "Agent",
+    "start": 19.042,
+    "end": 21.182
+   },
+   {
+    "turn_id": "010-T0010",
+    "quote": "Okay. have you tried switching on and off for the switch for the modem?",
+    "speaker": "Agent",
+    "start": 52.978,
+    "end": 61.198
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "5% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Speakers overlap on 31% of the quieter speaker's time: the channels may be out of sync, so turn order, the summary, and the sentiment windows are unreliable.",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

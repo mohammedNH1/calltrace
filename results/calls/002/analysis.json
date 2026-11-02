@@ -1,0 +1,232 @@
+{
+ "call_id": "002",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted a flexible, fully furnished apartment for a two-week business trip with amenities like a washer and dryer.",
+   "evidence": [
+    {
+     "turn_id": "002-T0003",
+     "quote": "I would like to have more flexibility in an apartment per se. I'm not sure if you have anything like that available or it's just long term, month by month.",
+     "speaker": "Customer",
+     "start": 41.474,
+     "end": 56.61
+    },
+    {
+     "turn_id": "002-T0004",
+     "quote": "I'm looking for say two weeks.",
+     "speaker": "Customer",
+     "start": 56.61,
+     "end": 59.31
+    },
+    {
+     "turn_id": "002-T0013",
+     "quote": "or like is the washer and dryer in the apartment? you know, things like that.",
+     "speaker": "Customer",
+     "start": 201.634,
+     "end": 213.614
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent recommended a fully furnished bachelor apartment with included appliances and flexible terms.",
+   "evidence": [
+    {
+     "turn_id": "002-T0009",
+     "quote": "I would say that one of our fully ful furnished apartments would be the best option for you.",
+     "speaker": "Agent",
+     "start": 129.97,
+     "end": 156.43
+    },
+    {
+     "turn_id": "002-T0014",
+     "quote": "Well, it comes with a fully stocked in terms of all appliances. So it comes with a fridge, it also comes with a washer and dryer, stove, so and microwave, you have all the options already in there.",
+     "speaker": "Agent",
+     "start": 215.17,
+     "end": 230.77
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent suggested the customer review availability online before booking, then promised to email details.",
+   "evidence": [
+    {
+     "turn_id": "002-T0035",
+     "quote": "My suggestion is that you look through it, find out what the availability is for the exact dates that you like, and be able to check out the rooms that you that you would like.",
+     "speaker": "Agent",
+     "start": 611.17,
+     "end": 634.59
+    },
+    {
+     "turn_id": "002-T0039",
+     "quote": "I will be able to I will send you out in just a few moments.",
+     "speaker": "Agent",
+     "start": 659.042,
+     "end": 665.982
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's need for flexibility and specific amenities.",
+   "evidence": [
+    {
+     "turn_id": "002-T0009",
+     "quote": "It does offer flexibility in terms of our rental options.",
+     "speaker": "Agent",
+     "start": 129.97,
+     "end": 156.43
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided a specific next step: the customer should check the website for availability.",
+   "evidence": [
+    {
+     "turn_id": "002-T0027",
+     "quote": "you can see all of it on our luxury apartments at Ottawa dot com.",
+     "speaker": "Agent",
+     "start": 455.074,
+     "end": 472.034
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The customer was advised to check availability online and wait for an email; no booking was completed.",
+   "evidence": [
+    {
+     "turn_id": "002-T0034",
+     "quote": "should I book it today or should I wait to s to look it over online or what would be your suggestion?",
+     "speaker": "Customer",
+     "start": 600.194,
+     "end": 610.174
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear interest and satisfaction by stating they would like to book the apartment and thanking the agent.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0034",
+     "quote": "It sounds like I would like to go for that.",
+     "speaker": "Customer",
+     "start": 600.194,
+     "end": 610.174
+    },
+    {
+     "turn_id": "002-T0038",
+     "quote": "Thank you very much.",
+     "speaker": "Customer",
+     "start": 656.258,
+     "end": 663.038
+    },
+    {
+     "turn_id": "002-T0040",
+     "quote": "Looking forward to it.",
+     "speaker": "Customer",
+     "start": 667.218,
+     "end": 669.758
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about their travel plans and rental preferences without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0002",
+     "quote": "Oh, my name is Dorothy Bar Brown and I am going to be on a business trip very soon",
+     "speaker": "Customer",
+     "start": 21.794,
+     "end": 41.474
+    },
+    {
+     "turn_id": "002-T0003",
+     "quote": "I would like to have more flexibility in an apartment per se.",
+     "speaker": "Customer",
+     "start": 41.474,
+     "end": 56.61
+    },
+    {
+     "turn_id": "002-T0004",
+     "quote": "I'm looking for say two weeks.",
+     "speaker": "Customer",
+     "start": 56.61,
+     "end": 59.31
+    }
+   ],
+   "window_turn_ids": [
+    "002-T0002",
+    "002-T0003",
+    "002-T0004"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and anticipation for the service provided.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0038",
+     "quote": "Thank you very much.",
+     "speaker": "Customer",
+     "start": 656.258,
+     "end": 663.038
+    },
+    {
+     "turn_id": "002-T0040",
+     "quote": "Looking forward to it. Thank you.",
+     "speaker": "Customer",
+     "start": 667.218,
+     "end": 669.758
+    }
+   ],
+   "window_turn_ids": [
+    "002-T0036",
+    "002-T0038",
+    "002-T0040"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses enthusiasm and satisfaction by recommending the customer look at the website to confirm availability before booking.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "002-T0035",
+    "quote": "My suggestion is that you look through it, find out what the availability is for the exact dates that you like, and be able to check out the rooms that you that you would like.",
+    "speaker": "Agent",
+    "start": 611.17,
+    "end": 634.59
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

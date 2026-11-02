@@ -1,0 +1,125 @@
+{
+  "selected_calls": 14,
+  "processed_calls": 14,
+  "transcription": {
+    "calls": 14,
+    "channels": 28,
+    "reference_words": 19248,
+    "pooled_wer_pct": 9.32,
+    "median_call_wer_pct": 6.81,
+    "min_call_wer_pct": 3.28,
+    "max_call_wer_pct": 22.77,
+    "agent_pooled_wer_pct": 5.79,
+    "customer_pooled_wer_pct": 15.04,
+    "normalisation": "dataset score.py protocol, re-implemented; whisper_normalizer package in place of openai-whisper's identical normaliser class"
+  },
+  "speaker_separation": {
+    "calls": 14,
+    "median_der_pct": 10.23,
+    "max_der_pct": 22.67,
+    "median_confusion_pct": 0.14,
+    "max_confusion_pct": 1.1,
+    "collar_s": 0.25,
+    "role_phrase_check": {
+      "agrees": 14
+    },
+    "median_word_level_der_pct": 10.16,
+    "median_word_level_confusion_pct": 0.15,
+    "max_word_level_confusion_pct": 0.63,
+    "mono_baseline": {
+      "calls": 14,
+      "median_der_pct": 6.97,
+      "max_der_pct": 50.01,
+      "median_confusion_pct": 1.1,
+      "max_confusion_pct": 35.23,
+      "median_inference_s": 243.0
+    },
+    "median_reference_overlap_pct": 4.8,
+    "max_reference_overlap_pct": 54.2,
+    "note": "Speaker identity comes from split channels, so confusion here measures timing overlap, not a clustering decision."
+  },
+  "output_validation": {
+    "calls": 14,
+    "calls_passing_validation": 11,
+    "citations_checked": 275,
+    "repair_retries": 10,
+    "claims_stated": 40,
+    "claims_unclear": 2,
+    "claims_not_stated": 0,
+    "failing_errors": [
+      "agent_acknowledged_issue: answer 'yes' cites no turn",
+      "concrete_action_or_next_step: answer 'yes' cites no turn",
+      "resolution: answer 'unresolved' cites no turn",
+      "agent_action: quote not found in 009-T0013: \"Okay, we provide standard insurance coverage up to one hundred dollars automatically. That's for default, but for items like this kind of expensive glassware, we strongly recommend purchasing supplemental insurance just to cover the full declared replacement value.\"",
+      "agent_action: quote not in 009-T0013: \"Okay, we provide standard insurance coverage up to one hundred dollars automatically. That's for default, but for items like this kind of expensive glassware, we strongly recommend purchasing supplemental insurance just to cover the full declared replacement value.\". Exact turn text: 'Okay, noted. because of the high value, what kind of insurance coverage do you offer for high value fragile items? I mean How often can I get the tracking updates?'",
+      "concrete_action_or_next_step: quote not found in 014-T0048: 'two four two seven one zero.'",
+      "concrete_action_or_next_step: quote not in 014-T0048: 'two four two seven one zero.'. Exact turn text: \"That is correct. So when you when you do phone in and I'm not in the office, then you can any one of our technicians will be able to help you with that reference number. Okay, so if ever you have a problem with the system update again and you see that you've run through the steps that I've given you, we do repairs for 250 Rand and the turnaround time for the repairs is roughly seven working days.\"",
+      "outcome_or_next_step: quote not found in 014-T0048: 'two four two seven one zero.'",
+      "outcome_or_next_step: quote not in 014-T0048: 'two four two seven one zero.'. Exact turn text: \"That is correct. So when you when you do phone in and I'm not in the office, then you can any one of our technicians will be able to help you with that reference number. Okay, so if ever you have a problem with the system update again and you see that you've run through the steps that I've given you, we do repairs for 250 Rand and the turnaround time for the repairs is roughly seven working days.\""
+    ]
+  },
+  "grounding_ai_audit": {
+    "auditor": "AI-assisted audit by the development assistant (Claude Opus 5.5). NOT a human annotation and NOT independent human validation.",
+    "claims": 42,
+    "cited_support": {
+      "supported": 20,
+      "partially": 22
+    },
+    "correct_in_call": {
+      "yes": 34,
+      "partly": 7,
+      "no": 1
+    },
+    "cited_support_by_type": {
+      "issue": {
+        "supported": 9,
+        "partially": 5
+      },
+      "action": {
+        "partially": 11,
+        "supported": 3
+      },
+      "outcome": {
+        "partially": 6,
+        "supported": 8
+      }
+    }
+  },
+  "grounding_ai_audit_notice": "AI-assisted audit by the development assistant (Claude Opus 5.5), a different model from the one that wrote the summaries. It is NOT a human annotation and NOT independent human validation.",
+  "human_review": {
+    "status": "not reviewed: no human labels yet",
+    "labels_completed": 0
+  },
+  "sentiment_ai_second_reader": {
+    "reader": "AI second reader: the development assistant (Claude Opus 5.5). NOT a human annotation and NOT independent human validation. The reader had already seen the pipeline's labels, so this comparison is not blind.",
+    "calls": 14,
+    "agreements": {
+      "overall": 8,
+      "beginning": 13,
+      "ending": 12,
+      "resolution": 12
+    }
+  },
+  "asr_vs_reference": {
+    "calls": [
+      "005",
+      "007",
+      "008",
+      "010",
+      "012"
+    ],
+    "label_fields_compared": 25,
+    "label_fields_matching": 20,
+    "text_fields_for_manual_comparison": 15,
+    "skipped_calls": []
+  },
+  "runtime": {
+    "hardware": "AMD Ryzen 7 6800H (8 cores), 15 GB RAM; ASR on CPU; LLM on RTX 3050 Ti 4 GB via Vulkan",
+    "asr_model_load_s_cached_weights": 5.34,
+    "calls_timed": 14,
+    "median_transcription_s_per_audio_minute": 7.5,
+    "median_analysis_s_per_call": 45.5,
+    "max_analysis_s_per_call": 70.4,
+    "note": "Timed during normal use of the machine. Some LLM answers came from the cache."
+  }
+}

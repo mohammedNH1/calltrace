@@ -1,0 +1,5 @@
+﻿call_id,channel,parakeet_full_precision_wer_pct,deletions,reference_words,seconds
+003,1,5.38,4,688,29.2
+009,2,18.3,6,399,29.0
+010,2,35.65,116,1383,59.1
+012,1,3.57,4,672,23.5

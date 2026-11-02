@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_IE_Food_1592985_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 902.865,
+  "peak": 0.9968,
+  "clipped_share": 0.0,
+  "active_share": 0.4642,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.04779,
+  "sha256": "207f0ca617e77dd3265c568974e7f5f1439716d3810a941d9358cacd15a02f2d"
+ },
+ "2": {
+  "file": "en_IE_Food_1592985_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 902.865,
+  "peak": 0.8475,
+  "clipped_share": 0.0,
+  "active_share": 0.1516,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.0529,
+  "sha256": "a82d90b774326aa2504761a0fc50af5ce9d32caa132ccfd4b50e9f9c33a1de9d"
+ }
+}

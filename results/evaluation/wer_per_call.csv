@@ -1,0 +1,15 @@
+﻿call_id,accent,domain,reference_words,wer_pct,substitutions,deletions,insertions,agent_wer_pct,customer_wer_pct,published_accent_wer_pct
+001,en-AU,banking,1640,3.9,25,14,25,4.55,3.03,5.2
+002,en-CA,realestate,1641,3.96,19,9,37,3.57,4.81,7.6
+003,en-CN,health,1134,6.88,46,11,21,5.38,9.19,12.9
+004,en-GB,travel,1859,14.09,116,58,88,11.79,16.07,10.3
+005,en-GB_SCT,aviation,697,6.74,14,13,20,7.71,5.61,12.1
+006,en-GB_WLS,energy,1110,13.78,75,30,48,11.42,20.86,10.7
+007,en-IE,food,2171,4.15,44,34,12,2.14,11.09,7.3
+008,en-IN,entertainment,1092,10.71,54,23,40,8.23,15.25,9.7
+009,en-MX,deliveryservice,1256,9.71,59,17,46,5.72,18.3,10.9
+010,en-SG,telecom,2345,22.77,276,127,131,4.26,35.65,12.4
+011,en-US_Aave,finance,882,5.44,22,12,14,3.4,9.52,8.1
+012,en-US_General,hospitality,884,3.28,17,6,6,3.57,2.36,5.5
+013,en-US_Southern,retail,1175,6.38,31,5,39,7.4,5.01,7.1
+014,en-ZA,technology,1362,8.08,58,29,23,7.0,10.37,9.6

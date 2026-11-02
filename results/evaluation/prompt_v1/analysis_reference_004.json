@@ -1,0 +1,274 @@
+{
+ "call_id": "004",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted to book a family cruise package to Dubai for six people, including two minors, a pregnant wife, and a lactose-intolerant family member.",
+   "evidence": [
+    {
+     "turn_id": "004-R0003",
+     "quote": "So I'm looking to book a family cruise package for myself and my family.",
+     "speaker": "Customer",
+     "start": 17.94,
+     "end": 27.84
+    },
+    {
+     "turn_id": "004-R0015",
+     "quote": "I'm sorry. I just wanted to ask 'cause I want to book the family suite package to Dubai.",
+     "speaker": "Customer",
+     "start": 65.64,
+     "end": 72.71
+    },
+    {
+     "turn_id": "004-R0030",
+     "quote": "So 'cause one of my family members is lactose intolerant.",
+     "speaker": "Customer",
+     "start": 143.54,
+     "end": 149.24
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent explained package options, prices, cabin details, food options, and safety measures before confirming the booking.",
+   "evidence": [
+    {
+     "turn_id": "004-R0018",
+     "quote": "So we have three different packages. We have the basic one and the second one being business friendly, and third one is our supreme.",
+     "speaker": "Agent",
+     "start": 84.44,
+     "end": 97.04
+    },
+    {
+     "turn_id": "004-R0021",
+     "quote": "Yeah. So basic package starts from five hundred dollars . the business friendly is seven fifty. And the first class equivalent is one thousand five hundred.",
+     "speaker": "Agent",
+     "start": 101.04,
+     "end": 113.84
+    },
+    {
+     "turn_id": "004-R0031",
+     "quote": "of course. We have soy milk, almond milk, oat milk, everything ready on board.",
+     "speaker": "Agent",
+     "start": 149.54,
+     "end": 158.14
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed the booking, collected the deposit, and promised to send an email with the reservation details.",
+   "evidence": [
+    {
+     "turn_id": "004-R0093",
+     "quote": "Yeah. That's not a problem. I'll go ahead and make that payment.",
+     "speaker": "Customer",
+     "start": 468.44,
+     "end": 470.44
+    },
+    {
+     "turn_id": "004-R0119",
+     "quote": "So I'll to make the deposit, I'll phone you back tomorrow. Because unfortunately, we're closing at the moment.",
+     "speaker": "Agent",
+     "start": 588.24,
+     "end": 594.84
+    },
+    {
+     "turn_id": "004-R0121",
+     "quote": "sure. I'll send that to you now.",
+     "speaker": "Agent",
+     "start": 601.44,
+     "end": 603.24
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's needs regarding the pregnant wife and dietary restrictions.",
+   "evidence": [
+    {
+     "turn_id": "004-R0047",
+     "quote": "yeah. So for your pregnant wife, we'll give complimentary nappies and like pregnancy package.",
+     "speaker": "Agent",
+     "start": 224.14,
+     "end": 231.84
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the booking and specified the deposit amount and payment schedule.",
+   "evidence": [
+    {
+     "turn_id": "004-R0077",
+     "quote": "So, because the package is two thousand seven hundred fifty, we will take a deposit of seven hundred fifty.",
+     "speaker": "Agent",
+     "start": 391.24,
+     "end": 397.24
+    },
+    {
+     "turn_id": "004-R0080",
+     "quote": "the rest of the payment will be due one week before the departure date.",
+     "speaker": "Agent",
+     "start": 400.74,
+     "end": 405.04
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The customer explicitly agreed to proceed with the booking and the agent confirmed the reservation details.",
+   "evidence": [
+    {
+     "turn_id": "004-R0093",
+     "quote": "Yeah. That's not a problem. I'll go ahead and make that payment.",
+     "speaker": "Customer",
+     "start": 468.44,
+     "end": 470.44
+    },
+    {
+     "turn_id": "004-R0121",
+     "quote": "sure. I'll send that to you now.",
+     "speaker": "Agent",
+     "start": 601.44,
+     "end": 603.24
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses repeated gratitude, relief, and enthusiasm throughout the call, culminating in a final thank you for the successful booking.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-R0027",
+     "quote": "Okay. That's very excellent. Thank you.",
+     "speaker": "Customer",
+     "start": 126.54,
+     "end": 133.34
+    },
+    {
+     "turn_id": "004-R0039",
+     "quote": "That's lovely. So could I ohh. I love that.",
+     "speaker": "Customer",
+     "start": 186.54,
+     "end": 190.64
+    },
+    {
+     "turn_id": "004-R0065",
+     "quote": "That's lovely. I'm glad to hear that.",
+     "speaker": "Customer",
+     "start": 323.44,
+     "end": 325.04
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual details about their travel plans without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-R0003",
+     "quote": "So I'm looking to book a family cruise package for myself and my family.",
+     "speaker": "Customer",
+     "start": 17.94,
+     "end": 27.84
+    },
+    {
+     "turn_id": "004-R0006",
+     "quote": "six of us including me please.",
+     "speaker": "Customer",
+     "start": 32.44,
+     "end": 34.14
+    },
+    {
+     "turn_id": "004-R0012",
+     "quote": "nope. Well, there's a pregnant passenger.",
+     "speaker": "Customer",
+     "start": 51.14,
+     "end": 55.04
+    }
+   ],
+   "window_turn_ids": [
+    "004-R0003",
+    "004-R0006",
+    "004-R0012"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and appreciation for the agent's assistance in securing the booking.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-R0120",
+     "quote": "Thank you for helping me.",
+     "speaker": "Customer",
+     "start": 590.54,
+     "end": 599.84
+    },
+    {
+     "turn_id": "004-R0122",
+     "quote": "Thank you so much. I appreciate your help.",
+     "speaker": "Customer",
+     "start": 602.34,
+     "end": 607.64
+    }
+   ],
+   "window_turn_ids": [
+    "004-R0117",
+    "004-R0120",
+    "004-R0122"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses enthusiasm and gratitude throughout the call, specifically highlighting customer care and safety measures.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "004-R0016",
+    "quote": "Of course. There's a lovely, there's a lovely place there.",
+    "speaker": "Agent",
+    "start": 70.64,
+    "end": 73.74
+   },
+   {
+    "turn_id": "004-R0038",
+    "quote": "yeah. little, tiny free presents as well. we're all about the customer.",
+    "speaker": "Agent",
+    "start": 181.61,
+    "end": 190.58
+   },
+   {
+    "turn_id": "004-R0064",
+    "quote": "And we have we have the top reviews and we do a devious background check on our customers before booking them on to our cruise.",
+    "speaker": "Agent",
+    "start": 314.84,
+    "end": 323.34
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

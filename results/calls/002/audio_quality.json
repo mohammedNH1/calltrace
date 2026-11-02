@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_CA_RealEstate_1592209_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 690.862,
+  "peak": 0.7963,
+  "clipped_share": 0.0,
+  "active_share": 0.3651,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06391,
+  "sha256": "fb7e058f0be2d7d5ee363bf1f91eabca186981162e460742f7599fd61771781f"
+ },
+ "2": {
+  "file": "en_CA_RealEstate_1592209_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 690.862,
+  "peak": 0.3568,
+  "clipped_share": 0.0,
+  "active_share": 0.1993,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.03051,
+  "sha256": "b1521c25ccf707e35e5f6bb8a5eae3ab18adce297d66dddf7f2918caf09a59b9"
+ }
+}

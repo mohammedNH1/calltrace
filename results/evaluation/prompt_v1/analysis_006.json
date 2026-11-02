@@ -1,0 +1,233 @@
+{
+ "call_id": "006",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "request a new energy service for a new home",
+   "evidence": [
+    {
+     "turn_id": "006-T0002",
+     "quote": "Oh, I'm looking to request a new energy service. New electricity service for new home, please.",
+     "speaker": "Customer",
+     "start": 17.282,
+     "end": 23.902
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "collected address, explained installation charges, and provided a link to sign up",
+   "evidence": [
+    {
+     "turn_id": "006-T0007",
+     "quote": "me with an address for the new the new property, please.",
+     "speaker": "Agent",
+     "start": 55.378,
+     "end": 60.718
+    },
+    {
+     "turn_id": "006-T0013",
+     "quote": "So the price ranges, installation prices is probably around we've got forty pound here for the installation charge",
+     "speaker": "Agent",
+     "start": 114.514,
+     "end": 135.314
+    },
+    {
+     "turn_id": "006-T0041",
+     "quote": "if I can just take that email before you go then.",
+     "speaker": "Agent",
+     "start": 497.506,
+     "end": 501.166
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "agent will send sign-up link via email for customer to complete",
+   "evidence": [
+    {
+     "turn_id": "006-T0043",
+     "quote": "I'll get that sent out to you as soon as we come off this call",
+     "speaker": "Agent",
+     "start": 514.466,
+     "end": 532.286
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "Agent restated the need for an address and confirmed the service request.",
+   "evidence": [
+    {
+     "turn_id": "006-T0007",
+     "quote": "me with an address for the new the new property, please.",
+     "speaker": "Agent",
+     "start": 55.378,
+     "end": 60.718
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "Agent provided a specific email address and timeline for installation.",
+   "evidence": [
+    {
+     "turn_id": "006-T0042",
+     "quote": "Yeah the email is Norton at New Beach Hotmail.org.uk",
+     "speaker": "Customer",
+     "start": 501.762,
+     "end": 511.262
+    },
+    {
+     "turn_id": "006-T0045",
+     "quote": "If you fill it out this evening then the first team in tomorrow morning will process that for you",
+     "speaker": "Agent",
+     "start": 538.306,
+     "end": 556.91
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "Customer received the email link and agreed to complete forms before hanging up.",
+   "evidence": [
+    {
+     "turn_id": "006-T0047",
+     "quote": "Okay, thank you very much.",
+     "speaker": "Customer",
+     "start": 558.482,
+     "end": 561.422
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "neutral",
+   "justification": "The customer exchanges plain information regarding service details without expressing clear positive or negative sentiment.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0002",
+     "quote": "Oh, I'm looking to request a new energy service.",
+     "speaker": "Customer",
+     "start": 17.282,
+     "end": 23.902
+    },
+    {
+     "turn_id": "006-T0010",
+     "quote": "I was looking at NPC Energy because they seem to have the cheapest prices.",
+     "speaker": "Customer",
+     "start": 89.282,
+     "end": 95.902
+    },
+    {
+     "turn_id": "006-T0012",
+     "quote": "Can you give me some details please about installation charges and the sort of time frame that I can expect for this, please?",
+     "speaker": "Customer",
+     "start": 105.122,
+     "end": 115.022
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about their request and address without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0002",
+     "quote": "Oh, I'm looking to request a new energy service.",
+     "speaker": "Customer",
+     "start": 17.282,
+     "end": 23.902
+    },
+    {
+     "turn_id": "006-T0004",
+     "quote": "My new home is",
+     "speaker": "Customer",
+     "start": 29.922,
+     "end": 34.542
+    },
+    {
+     "turn_id": "006-T0008",
+     "quote": "It's number three Beach Road, Melton Bive Zero Three One Two A.",
+     "speaker": "Customer",
+     "start": 60.786,
+     "end": 72.046
+    }
+   ],
+   "window_turn_ids": [
+    "006-T0002",
+    "006-T0004",
+    "006-T0008"
+   ]
+  },
+  "ending": {
+   "label": "neutral",
+   "justification": "The customer provides factual information and asks a clarifying question without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0042",
+     "quote": "Yeah the email is Norton at New Beach Hotmail.org.uk",
+     "speaker": "Customer",
+     "start": 501.762,
+     "end": 511.262
+    },
+    {
+     "turn_id": "006-T0044",
+     "quote": "Okay, so as long as I fill out all the forms on time",
+     "speaker": "Customer",
+     "start": 533.09,
+     "end": 537.95
+    },
+    {
+     "turn_id": "006-T0046",
+     "quote": "process straight away, will it? Okay.",
+     "speaker": "Customer",
+     "start": 539.25,
+     "end": 543.63
+    }
+   ],
+   "window_turn_ids": [
+    "006-T0042",
+    "006-T0044",
+    "006-T0046"
+   ]
+  },
+  "change": "unchanged",
+  "change_note": "Both windows are labelled neutral."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine satisfaction and warmth, explicitly stating 'Thank you, lovely' and confirming the customer's email was received without issue.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "006-T0049",
+    "quote": "No problem. Thank you, lovely. Bye.",
+    "speaker": "Agent",
+    "start": 562.77,
+    "end": 568.19
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

@@ -1,0 +1,206 @@
+{
+ "call_id": "006",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer requested a new electricity service for a home in Norton Beach.",
+   "evidence": [
+    {
+     "turn_id": "006-T0002",
+     "quote": "Oh, I'm looking to request a new energy service. New electricity service for a new home, please.",
+     "speaker": "Customer",
+     "start": 17.282,
+     "end": 24.062
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent collected the customer's address and explained installation charges and plan differences.",
+   "evidence": [
+    {
+     "turn_id": "006-T0007",
+     "quote": "You provide me with an address for the new the new property, please.",
+     "speaker": "Agent",
+     "start": 54.818,
+     "end": 60.638
+    },
+    {
+     "turn_id": "006-T0013",
+     "quote": "So the price ranges, installation prices is probably around we've got forty pound here for the installation charge.",
+     "speaker": "Agent",
+     "start": 114.434,
+     "end": 135.314
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent promised to send a sign-up link via email and scheduled installation for Sunday.",
+   "evidence": [
+    {
+     "turn_id": "006-T0044",
+     "quote": "I'll get that sent out to you as soon as we come off this call.",
+     "speaker": "Agent",
+     "start": 514.546,
+     "end": 532.366
+    },
+    {
+     "turn_id": "006-T0046",
+     "quote": "If you fill it out this evening then the first team in tomorrow morning will process that for you.",
+     "speaker": "Agent",
+     "start": 538.386,
+     "end": 556.91
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue and provided details.",
+   "evidence": []
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "A specific email link and processing timeline were provided.",
+   "evidence": []
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The service was not installed; only the sign-up process was initiated.",
+   "evidence": []
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses satisfaction with the service details and the agent's helpfulness, concluding with a polite thank you.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0010",
+     "quote": "I was looking at NPC Energy because they seem to have the cheapest prices.",
+     "speaker": "Customer",
+     "start": 89.362,
+     "end": 95.902
+    },
+    {
+     "turn_id": "006-T0041",
+     "quote": "Okay, that sounds good.",
+     "speaker": "Customer",
+     "start": 492.322,
+     "end": 499.582
+    },
+    {
+     "turn_id": "006-T0051",
+     "quote": "Thank you, bye for now.",
+     "speaker": "Customer",
+     "start": 566.082,
+     "end": 568.622
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about their request and address without expressing any emotion or opinion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0002",
+     "quote": "Oh, I'm looking to request a new energy service.",
+     "speaker": "Customer",
+     "start": 17.282,
+     "end": 24.062
+    },
+    {
+     "turn_id": "006-T0004",
+     "quote": "My new home is",
+     "speaker": "Customer",
+     "start": 29.842,
+     "end": 34.542
+    },
+    {
+     "turn_id": "006-T0008",
+     "quote": "Yep, it's number three, Beach Road, Norton Beach, NP five zero three one two A.",
+     "speaker": "Customer",
+     "start": 60.226,
+     "end": 71.966
+    }
+   ],
+   "window_turn_ids": [
+    "006-T0002",
+    "006-T0004",
+    "006-T0008"
+   ]
+  },
+  "ending": {
+   "label": "neutral",
+   "justification": "The customer's responses are brief confirmations and polite farewells without expressing specific satisfaction or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "006-T0045",
+     "quote": "Okay, so as long as I fill out all the forms on time",
+     "speaker": "Customer",
+     "start": 533.09,
+     "end": 538.11
+    },
+    {
+     "turn_id": "006-T0047",
+     "quote": "process straight away with it? Okay.",
+     "speaker": "Customer",
+     "start": 539.33,
+     "end": 543.63
+    },
+    {
+     "turn_id": "006-T0051",
+     "quote": "Thank you, bye for now.",
+     "speaker": "Customer",
+     "start": 566.082,
+     "end": 568.622
+    }
+   ],
+   "window_turn_ids": [
+    "006-T0045",
+    "006-T0047",
+    "006-T0051"
+   ]
+  },
+  "change": "unchanged",
+  "change_note": "Both windows are labelled neutral."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine satisfaction and warmth, explicitly stating 'Thank you, lovely' and confirming the customer's email was received without issue.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "006-T0050",
+    "quote": "No problem. Thank you, lovely. Bye.",
+    "speaker": "Agent",
+    "start": 562.77,
+    "end": 568.19
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_acknowledged_issue: answer 'yes' cites no turn",
+   "concrete_action_or_next_step: answer 'yes' cites no turn",
+   "resolution: answer 'unresolved' cites no turn"
+  ],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

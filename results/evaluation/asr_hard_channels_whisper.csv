@@ -1,0 +1,4 @@
+﻿call_id,channel,role,whisper_wer_pct,deletions,reference_words,seconds
+003,1,agent,6.83,8,688,192.2
+010,2,customer,36.59,181,1383,518.9
+009,2,customer,17.54,20,399,145.2

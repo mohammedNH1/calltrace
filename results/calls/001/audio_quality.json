@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_AU_Banking_1590914_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 633.177,
+  "peak": 1.0,
+  "clipped_share": 3e-06,
+  "active_share": 0.3786,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05004,
+  "sha256": "3da2a85838ef48a113610d56bd433dcbb0d1f6c78395253cf45d8667f063a76b"
+ },
+ "2": {
+  "file": "en_AU_Banking_1590914_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 633.177,
+  "peak": 1.0,
+  "clipped_share": 0.0,
+  "active_share": 0.2673,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05507,
+  "sha256": "b85424cc279ebe4f483980313cc38c9b8bbcee1ee6f6ac829c79df266d5f0bc0"
+ }
+}

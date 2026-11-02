@@ -1,0 +1,2 @@
+{"step": "asr_model_load", "seconds": 8.3}
+{"step": "call", "call_id": "pilot", "audio_s": 604.403, "transcription_s": 87.92, "analysis_s": 47.32, "turns": 50, "machine": "AMD64 Family 25 Model 68 Stepping 1, AuthenticAMD"}

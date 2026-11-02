@@ -1,0 +1,253 @@
+{
+ "call_id": "003",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "I need to schedule a follow-up appointment with my doctor and also ask about prescription refill.",
+   "evidence": [
+    {
+     "turn_id": "003-R0003",
+     "quote": "Hi, Bryan. I need to schedule a follow-up appointment with my doctor and also ask about prescription refill. Hope you can help me both.",
+     "speaker": "Customer",
+     "start": 20.24,
+     "end": 32.14
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent collected patient details, checked availability, booked an appointment, and explained prescription refill procedures.",
+   "evidence": [
+    {
+     "turn_id": "003-R0004",
+     "quote": "Absolutely. Let's tackle the appointment first then we will get to the prescription. First, can I get your full name and date of birth?",
+     "speaker": "Agent",
+     "start": 33.24,
+     "end": 46.34
+    },
+    {
+     "turn_id": "003-R0015",
+     "quote": "Let me lock that in right now. yeah. Tuesday eleven a.m. with Doctor Carter is yours. I will add that to your file.",
+     "speaker": "Agent",
+     "start": 154.94,
+     "end": 164.55
+    },
+    {
+     "turn_id": "003-R0020",
+     "quote": "I understand. We don't want you to miss any doses. Let me check your prescription history.",
+     "speaker": "Agent",
+     "start": 193.74,
+     "end": 199.59
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The appointment was confirmed for Tuesday at 11 a.m., and the prescription refill would be sent to Community Pharmacy by 5 p.m. for pickup the next morning.",
+   "evidence": [
+    {
+     "turn_id": "003-R0015",
+     "quote": "Tuesday eleven a.m. with Doctor Carter is yours. I will add that to your file.",
+     "speaker": "Agent",
+     "start": 154.94,
+     "end": 164.55
+    },
+    {
+     "turn_id": "003-R0029",
+     "quote": "You should be able to pick it up tomorrow morning. And they will also call you when it's ready.",
+     "speaker": "Agent",
+     "start": 258.22,
+     "end": 263.84
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the appointment and prescription refill needs.",
+   "evidence": [
+    {
+     "turn_id": "003-R0007",
+     "quote": "Got it, Linda. Let me pull your file. All right, here we go. Doctor Carter noted you need a follow-up for your blood pressure meds, right?",
+     "speaker": "Agent",
+     "start": 70.64,
+     "end": 80.87
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "A specific appointment time and pharmacy pickup time were provided.",
+   "evidence": [
+    {
+     "turn_id": "003-R0015",
+     "quote": "Tuesday eleven a.m. with Doctor Carter is yours.",
+     "speaker": "Agent",
+     "start": 154.94,
+     "end": 164.55
+    },
+    {
+     "turn_id": "003-R0029",
+     "quote": "You should be able to pick it up tomorrow morning.",
+     "speaker": "Agent",
+     "start": 258.22,
+     "end": 263.84
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "Both the appointment and prescription refill were explicitly arranged and confirmed during the call.",
+   "evidence": [
+    {
+     "turn_id": "003-R0015",
+     "quote": "Tuesday eleven a.m. with Doctor Carter is yours.",
+     "speaker": "Agent",
+     "start": 154.94,
+     "end": 164.55
+    },
+    {
+     "turn_id": "003-R0029",
+     "quote": "You should be able to pick it up tomorrow morning.",
+     "speaker": "Agent",
+     "start": 258.22,
+     "end": 263.84
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses relief and gratitude, stating the agent made the process easy and alleviating their stress.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-R0030",
+     "quote": "That's a huge relief.",
+     "speaker": "Customer",
+     "start": 264.84,
+     "end": 276.54
+    },
+    {
+     "turn_id": "003-R0053",
+     "quote": "You made it so easy. I was so stressed before.",
+     "speaker": "Customer",
+     "start": 481.14,
+     "end": 488.84
+    },
+    {
+     "turn_id": "003-R0053",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 481.14,
+     "end": 488.84
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information about scheduling an appointment and a prescription refill without expressing any emotion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-R0003",
+     "quote": "I need to schedule a follow-up appointment with my doctor and also ask about prescription refill.",
+     "speaker": "Customer",
+     "start": 20.24,
+     "end": 32.14
+    },
+    {
+     "turn_id": "003-R0005",
+     "quote": "Yes. My name is Linda Chang C H A N G and my date of birth is May twelve nineteen eighty eight.",
+     "speaker": "Customer",
+     "start": 47.64,
+     "end": 58.64
+    },
+    {
+     "turn_id": "003-R0006",
+     "quote": "My regular doctor is Doctor Carter. We met a month ago for a check-up. And she said I should come back for a follow-up soon.",
+     "speaker": "Customer",
+     "start": 58.64,
+     "end": 69.34
+    }
+   ],
+   "window_turn_ids": [
+    "003-R0003",
+    "003-R0005",
+    "003-R0006"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses relief and gratitude, stating they were stressed before and now feel the process was made easy.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "003-R0053",
+     "quote": "Ohh, perfect. Thank you so much, Bryan. You made it so easy. I was so stressed before.",
+     "speaker": "Customer",
+     "start": 481.14,
+     "end": 488.84
+    },
+    {
+     "turn_id": "003-R0053",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 481.14,
+     "end": 488.84
+    },
+    {
+     "turn_id": "003-R0055",
+     "quote": "Thank you. Have a great day.",
+     "speaker": "Customer",
+     "start": 496.74,
+     "end": 498.94
+    }
+   ],
+   "window_turn_ids": [
+    "003-R0051",
+    "003-R0053",
+    "003-R0055"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine satisfaction and relief at successfully resolving the customer's appointment and prescription concerns.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "003-R0052",
+    "quote": "It will be about thirty minutes max. Doctor Carter just needs to check your blood pressure, review your logs, and answer any questions you have. You'll be in and out in time for work.",
+    "speaker": "Agent",
+    "start": 468.24,
+    "end": 480.44
+   },
+   {
+    "turn_id": "003-R0054",
+    "quote": "Happy to help, Linda. We'll see you on Tuesday. If you need anything before then, don't hesitate to call.",
+    "speaker": "Agent",
+    "start": 489.84,
+    "end": 495.84
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

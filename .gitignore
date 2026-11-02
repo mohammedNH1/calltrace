@@ -1,0 +1,30 @@
+# Environment
+.venv/
+__pycache__/
+*.egg-info/
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+
+# Large downloads, restored by the commands in the README
+models/
+data/raw/
+
+# Regenerable working files
+results/cache/
+results/smoke/
+results/evaluation/evaluate.log
+
+.venv/
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+.env
+.env.*
+!.env.example
+*.gguf
+*.onnx
+*.wav
+*.mp3
+*.flac

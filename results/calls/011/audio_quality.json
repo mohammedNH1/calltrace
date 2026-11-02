@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_US_Aave_Finance_1593115_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 390.032,
+  "peak": 0.8846,
+  "clipped_share": 0.0,
+  "active_share": 0.4004,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06108,
+  "sha256": "66a7c9cbce0383969c2f4467330f13a6d0eb613a8acd7a79e8cc6b00d5cb7b3e"
+ },
+ "2": {
+  "file": "en_US_Aave_Finance_1593115_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 390.032,
+  "peak": 0.9937,
+  "clipped_share": 0.0,
+  "active_share": 0.1802,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06863,
+  "sha256": "bb027fa4d39f98fbca57a92e44a6d7bb787ac77d20e97dbb3888a7aec5f726ca"
+ }
+}

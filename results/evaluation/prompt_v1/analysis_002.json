@@ -1,0 +1,267 @@
+{
+ "call_id": "002",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wants a short-term, fully furnished apartment option for a two-week business trip in Ottawa.",
+   "evidence": [
+    {
+     "turn_id": "002-T0002",
+     "quote": "I am going to be on the business trip very soon. considering the city of Ottawa.",
+     "speaker": "Customer",
+     "start": 22.114,
+     "end": 41.474
+    },
+    {
+     "turn_id": "002-T0003",
+     "quote": "I would like to have more flexibility in an apartment, per se. I'm not sure if you have anything like that available.",
+     "speaker": "Customer",
+     "start": 41.474,
+     "end": 56.61
+    },
+    {
+     "turn_id": "002-T0004",
+     "quote": "I'm looking for say two weeks.",
+     "speaker": "Customer",
+     "start": 56.61,
+     "end": 59.31
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent explained that fully furnished bachelor apartments are available for short-term stays with flexible terms.",
+   "evidence": [
+    {
+     "turn_id": "002-T0009",
+     "quote": "I would say that fully fur furnished apartments would be the best option for you. It does offer flexibility in terms of rental options.",
+     "speaker": "Agent",
+     "start": 130.05,
+     "end": 156.43
+    },
+    {
+     "turn_id": "002-T0014",
+     "quote": "It also comes with a washer and dryer, stove. So in microwave you have all the options already in there.",
+     "speaker": "Agent",
+     "start": 215.25,
+     "end": 230.69
+    },
+    {
+     "turn_id": "002-T0027",
+     "quote": "Yeah, so it has all the options in it. you can see all of it on luxury apartments dot com.",
+     "speaker": "Agent",
+     "start": 455.074,
+     "end": 472.034
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent agreed to send the customer details via email so they can check availability and book online.",
+   "evidence": [
+    {
+     "turn_id": "002-T0036",
+     "quote": "Okay, would it be possible for you to send me an email to my email address?",
+     "speaker": "Customer",
+     "start": 636.562,
+     "end": 642.222
+    },
+    {
+     "turn_id": "002-T0037",
+     "quote": "Oh, of course. I can give you all that information that we've already discussed, and then from there you can do the online booking right through the link.",
+     "speaker": "Agent",
+     "start": 643.762,
+     "end": 655.902
+    },
+    {
+     "turn_id": "002-T0039",
+     "quote": "Let me note down your email here and I will be able to I will send you out in just a few moments.",
+     "speaker": "Agent",
+     "start": 659.042,
+     "end": 665.982
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's need for a short-term furnished apartment.",
+   "evidence": [
+    {
+     "turn_id": "002-T0009",
+     "quote": "I would say that fully fur furnished apartments would be the best option for you.",
+     "speaker": "Agent",
+     "start": 130.05,
+     "end": 156.43
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed they would send an email with details for the customer to book online.",
+   "evidence": [
+    {
+     "turn_id": "002-T0037",
+     "quote": "I can give you all that information that we've already discussed, and then from there you can do the online booking right through the link.",
+     "speaker": "Agent",
+     "start": 643.762,
+     "end": 655.902
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unclear",
+   "note": "The customer agreed to look at the options online, but the booking was not completed during the call.",
+   "evidence": [
+    {
+     "turn_id": "002-T0034",
+     "quote": "It sounds like I would like to go for that. should I book it today or should I wait to look it over online?",
+     "speaker": "Customer",
+     "start": 600.274,
+     "end": 610.174
+    },
+    {
+     "turn_id": "002-T0035",
+     "quote": "My suggestion is that you look through it, find out what the availability is, for the exact dates that you like.",
+     "speaker": "Agent",
+     "start": 611.25,
+     "end": 634.43
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear interest and readiness to proceed with booking the apartment.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0034",
+     "quote": "It sounds like I would like to go for that.",
+     "speaker": "Customer",
+     "start": 600.274,
+     "end": 610.174
+    },
+    {
+     "turn_id": "002-T0038",
+     "quote": "Okay, I'd like to try them.",
+     "speaker": "Customer",
+     "start": 656.418,
+     "end": 659.118
+    },
+    {
+     "turn_id": "002-T0040",
+     "quote": "Looking forward to it.",
+     "speaker": "Customer",
+     "start": 667.298,
+     "end": 669.598
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual details about their travel plans and rental preferences without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0002",
+     "quote": "I am going to be on the business trip very soon.",
+     "speaker": "Customer",
+     "start": 22.114,
+     "end": 41.474
+    },
+    {
+     "turn_id": "002-T0003",
+     "quote": "I would like to have more flexibility in an apartment, per se.",
+     "speaker": "Customer",
+     "start": 41.474,
+     "end": 56.61
+    },
+    {
+     "turn_id": "002-T0004",
+     "quote": "I'm looking for say two weeks.",
+     "speaker": "Customer",
+     "start": 56.61,
+     "end": 59.31
+    }
+   ],
+   "window_turn_ids": [
+    "002-T0002",
+    "002-T0003",
+    "002-T0004"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses enthusiasm and gratitude by stating they want to try the service and explicitly says they are looking forward to receiving the email.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "002-T0038",
+     "quote": "Okay, I'd like to try them.",
+     "speaker": "Customer",
+     "start": 656.418,
+     "end": 659.118
+    },
+    {
+     "turn_id": "002-T0040",
+     "quote": "Looking forward to it. Thank you.",
+     "speaker": "Customer",
+     "start": 667.298,
+     "end": 669.598
+    }
+   ],
+   "window_turn_ids": [
+    "002-T0036",
+    "002-T0038",
+    "002-T0040"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses enthusiasm and satisfaction by highlighting the benefits of the service and confirming the customer's interest.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "002-T0022",
+    "quote": "So it really does offer a lot of different services to it.",
+    "speaker": "Agent",
+    "start": 378.882,
+    "end": 393.262
+   },
+   {
+    "turn_id": "002-T0033",
+    "quote": "Okay, so based on this, if you're looking at a Sunday, I'm seeing here that you're probably looking at about twelve hundred dollars for two weeks.",
+    "speaker": "Agent",
+    "start": 571.922,
+    "end": 598.942
+   },
+   {
+    "turn_id": "002-T0035",
+    "quote": "My suggestion is that you look through it, find out what the availability is, for the exact dates that you like.",
+    "speaker": "Agent",
+    "start": 611.25,
+    "end": 634.43
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

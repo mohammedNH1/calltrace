@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_GB_SCT_Aviation_1593663_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 358.734,
+  "peak": 0.9956,
+  "clipped_share": 0.0,
+  "active_share": 0.4078,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06713,
+  "sha256": "1bb60c866becedd722b7d49558c88cf93e1b5d9182c37c009e3ea8a57b8a3cdc"
+ },
+ "2": {
+  "file": "en_GB_SCT_Aviation_1593663_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 358.734,
+  "peak": 0.888,
+  "clipped_share": 0.0,
+  "active_share": 0.2621,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.0826,
+  "sha256": "d448a635a344c7bf3b8b88cebde11dc0a6a37f2d173d665974a116cc940425b4"
+ }
+}

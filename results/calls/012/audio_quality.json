@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_US_General_Hospitality_1586593_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 400.303,
+  "peak": 1.0,
+  "clipped_share": 2e-06,
+  "active_share": 0.4381,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.08235,
+  "sha256": "d94bad67bd19f1eb5a610020f02a88a773dbe85744f02b2149227241c73d53d8"
+ },
+ "2": {
+  "file": "en_US_General_Hospitality_1586593_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 400.302,
+  "peak": 1.0,
+  "clipped_share": 0.0,
+  "active_share": 0.1506,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05404,
+  "sha256": "8dc37229e11c187d8761f16d59509b0dfbb4082431f3536a22e45d3bff34e458"
+ }
+}

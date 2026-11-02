@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_US_General_Travel_1586358_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 604.403,
+  "peak": 1.0,
+  "clipped_share": 1e-06,
+  "active_share": 0.2483,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.0578,
+  "sha256": "e4bef7be58d297527b2145bbb4b21bf7716e10c53765f932e0c8a1607714a66e"
+ },
+ "2": {
+  "file": "en_US_General_Travel_1586358_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 604.403,
+  "peak": 0.7417,
+  "clipped_share": 0.0,
+  "active_share": 0.3656,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.04954,
+  "sha256": "17ddafbc5a98b649ba07e854a684d5e49026ab37acd8fb4c5c52d09accd28d4c"
+ }
+}

@@ -1,0 +1,236 @@
+{
+ "call_id": "004",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "So because one of my family members is actually intolerant, so would you provide for that for was any food suitable for that?",
+   "evidence": [
+    {
+     "turn_id": "004-T0027",
+     "quote": "So because one of my family members is actually intolerant, so would you provide for that for was any food suitable for that?",
+     "speaker": "Customer",
+     "start": 158.306,
+     "end": 163.486
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent listed available milk options and noted desserts are made with dairy-free milk.",
+   "evidence": [
+    {
+     "turn_id": "004-T0026",
+     "quote": "of course we have soya milk, almond milk, oat milk, everything ready on board. And all the desserts are made with dairy free milk.",
+     "speaker": "Agent",
+     "start": 149.618,
+     "end": 159.678
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed cabin availability and provided pricing details for the cruise package.",
+   "evidence": [
+    {
+     "turn_id": "004-T0028",
+     "quote": "so at the moment we have fifteen cabins available. Yep, only fifteen.",
+     "speaker": "Agent",
+     "start": 163.858,
+     "end": 171.998
+    },
+    {
+     "turn_id": "004-T0038",
+     "quote": "And so in total that'd be two thousand seven hundred and fifty dollars.",
+     "speaker": "Agent",
+     "start": 217.234,
+     "end": 222.494
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the food intolerance concern and provided specific dietary options.",
+   "evidence": [
+    {
+     "turn_id": "004-T0026",
+     "quote": "of course we have soya milk, almond milk, oat milk, everything ready on board. And all the desserts are made with dairy free milk.",
+     "speaker": "Agent",
+     "start": 149.618,
+     "end": 159.678
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the deposit amount and payment schedule for the booking.",
+   "evidence": [
+    {
+     "turn_id": "004-T0064",
+     "quote": "So because the package is two thousand seven hundred and fifty, we will take a deposit of seven hundred and fifty.",
+     "speaker": "Agent",
+     "start": 390.978,
+     "end": 398.478
+    },
+    {
+     "turn_id": "004-T0067",
+     "quote": "the rest of the payment will be due f one week before the departure date.",
+     "speaker": "Agent",
+     "start": 400.418,
+     "end": 405.438
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The agent confirmed the booking, meal options, and sent a reservation email immediately.",
+   "evidence": [
+    {
+     "turn_id": "004-T0094",
+     "quote": "I'll send that to you now.",
+     "speaker": "Agent",
+     "start": 601.122,
+     "end": 606.702
+    },
+    {
+     "turn_id": "004-T0095",
+     "quote": "Thank you so much. I appreciate your help. Thank you so much. Thank you. bye.",
+     "speaker": "Customer",
+     "start": 602.434,
+     "end": 607.774
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief regarding the food options suitable for their family member's intolerance.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-T0025",
+     "quote": "So because one of my family members is actually intolerant, so would you provide for that for was any food suitable for that?",
+     "speaker": "Customer",
+     "start": 143.346,
+     "end": 150.686
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual booking details and asks a question without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-T0002",
+     "quote": "So I'm looking to book a family cruise package for myself and my family.",
+     "speaker": "Customer",
+     "start": 15.09,
+     "end": 29.15
+    },
+    {
+     "turn_id": "004-T0004",
+     "quote": "six of us including me, please.",
+     "speaker": "Customer",
+     "start": 32.21,
+     "end": 41.55
+    },
+    {
+     "turn_id": "004-T0010",
+     "quote": "And so I just wanted to ask because I want people the package to Dubai.",
+     "speaker": "Customer",
+     "start": 65.282,
+     "end": 72.702
+    }
+   ],
+   "window_turn_ids": [
+    "004-T0002",
+    "004-T0004",
+    "004-T0010"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and appreciation for the agent's assistance in securing the booking.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "004-T0091",
+     "quote": "Oh I can't wait. I think that sounds lovely",
+     "speaker": "Customer",
+     "start": 579.074,
+     "end": 585.534
+    },
+    {
+     "turn_id": "004-T0093",
+     "quote": "Thank you for helping me",
+     "speaker": "Customer",
+     "start": 590.274,
+     "end": 600.974
+    },
+    {
+     "turn_id": "004-T0095",
+     "quote": "Thank you so much. I appreciate your help. Thank you so much. Thank you.",
+     "speaker": "Customer",
+     "start": 602.434,
+     "end": 607.774
+    }
+   ],
+   "window_turn_ids": [
+    "004-T0091",
+    "004-T0093",
+    "004-T0095"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine enthusiasm and gratitude, citing specific customer requests like the family package and dietary needs.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "004-T0011",
+    "quote": "Oh to the bot of course. Well lovely place there.",
+    "speaker": "Agent",
+    "start": 70.322,
+    "end": 74.062
+   },
+   {
+    "turn_id": "004-T0032",
+    "quote": "And yeah, and little tiny free presents as well. All about the customer",
+    "speaker": "Agent",
+    "start": 183.298,
+    "end": 190.478
+   },
+   {
+    "turn_id": "004-T0040",
+    "quote": "And yep, so if your pregnant wife will give complimentary nappies and like pre pregnancy package.",
+    "speaker": "Agent",
+    "start": 223.874,
+    "end": 231.614
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "customer_issue: quote not found in 004-T0027: 'So because one of my family members is actually intolerant, so would you provide for that for was any food suitable for that?'",
+   "customer_issue: quote not in 004-T0027: 'So because one of my family members is actually intolerant, so would you provide for that for was any food suitable for that?'. Exact turn text: \"I'm glad to hear, thank you. so I want to ask how many cabins are available so far?\""
+  ],
+  "retries_used": 3
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

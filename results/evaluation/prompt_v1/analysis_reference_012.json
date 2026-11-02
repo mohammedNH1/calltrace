@@ -1,0 +1,246 @@
+{
+ "call_id": "012",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "Customer requested a room upgrade for their upcoming anniversary booking.",
+   "evidence": [
+    {
+     "turn_id": "012-R0003",
+     "quote": "I just got a booking with you for next weekend, I was wondering if there's any chance of upgrading our room.",
+     "speaker": "Customer",
+     "start": 24.625,
+     "end": 38.156
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "Agent retrieved booking details and explained available upgrade options with prices.",
+   "evidence": [
+    {
+     "turn_id": "012-R0004",
+     "quote": "May I have the name of the booking is under please so that I can review it in my system?",
+     "speaker": "Agent",
+     "start": 42.25,
+     "end": 51.2
+    },
+    {
+     "turn_id": "012-R0013",
+     "quote": "We do have a few upgrade options available including our junior suites and our deluxe like sea view suites.",
+     "speaker": "Agent",
+     "start": 110.62,
+     "end": 122.1
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "Agent confirmed the upgrade, arranged dinner, and promised an email confirmation.",
+   "evidence": [
+    {
+     "turn_id": "012-R0036",
+     "quote": "I will upgrade your booking now, the total for two nights will be around five hundred and eighty dollars.",
+     "speaker": "Agent",
+     "start": 312.06,
+     "end": 318.57
+    },
+    {
+     "turn_id": "012-R0041",
+     "quote": "I'll reserve a table for two in our restaurant and will include a complimentary anniversary desert as a surprise for your partner.",
+     "speaker": "Agent",
+     "start": 350.84,
+     "end": 364.62
+    },
+    {
+     "turn_id": "012-R0039",
+     "quote": "I'll email your updated confirmation shortly.",
+     "speaker": "Agent",
+     "start": 331.594,
+     "end": 342.406
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "Agent restated the upgrade request and confirmed the action.",
+   "evidence": [
+    {
+     "turn_id": "012-R0004",
+     "quote": "Yes, thank you for your call today.",
+     "speaker": "Agent",
+     "start": 42.25,
+     "end": 51.2
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "Agent confirmed the upgrade, booked dinner, and promised email confirmation.",
+   "evidence": [
+    {
+     "turn_id": "012-R0036",
+     "quote": "I will upgrade your booking now.",
+     "speaker": "Agent",
+     "start": 312.06,
+     "end": 318.57
+    },
+    {
+     "turn_id": "012-R0041",
+     "quote": "I'll reserve a table for two in our restaurant.",
+     "speaker": "Agent",
+     "start": 350.84,
+     "end": 364.62
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The customer's request for an upgrade and dinner was explicitly completed.",
+   "evidence": [
+    {
+     "turn_id": "012-R0036",
+     "quote": "I will upgrade your booking now.",
+     "speaker": "Agent",
+     "start": 312.06,
+     "end": 318.57
+    },
+    {
+     "turn_id": "012-R0041",
+     "quote": "I'll reserve a table for two in our restaurant.",
+     "speaker": "Agent",
+     "start": 350.84,
+     "end": 364.62
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear satisfaction and gratitude throughout the call, citing specific positive reactions to room options and service.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "012-R0027",
+     "quote": "Wow OK that sounds perfect.",
+     "speaker": "Customer",
+     "start": 223.281,
+     "end": 232.344
+    },
+    {
+     "turn_id": "012-R0035",
+     "quote": "Lovely. I'm glad that we sussed through the options.",
+     "speaker": "Customer",
+     "start": 294.66,
+     "end": 302.77
+    },
+    {
+     "turn_id": "012-R0042",
+     "quote": "That's so kind, thank you. You've really been helpful.",
+     "speaker": "Customer",
+     "start": 365.0,
+     "end": 369.61
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual booking details and explains a special occasion without expressing strong emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "012-R0003",
+     "quote": "Hi Jessica I just got a booking with you for next weekend, I was wondering if there's any chance of upgrading our room. It's actually a special occasion for us.",
+     "speaker": "Customer",
+     "start": 24.625,
+     "end": 38.156
+    },
+    {
+     "turn_id": "012-R0005",
+     "quote": "Yeah, OK, so my first name is Jamie, J A M I E and last name Walker.",
+     "speaker": "Customer",
+     "start": 51.594,
+     "end": 59.219
+    },
+    {
+     "turn_id": "012-R0010",
+     "quote": "Yeah so it's actually our anniversary so I wanted to make sure it's a bit more special if possible, so.",
+     "speaker": "Customer",
+     "start": 88.91,
+     "end": 96.9
+    }
+   ],
+   "window_turn_ids": [
+    "012-R0003",
+    "012-R0005",
+    "012-R0010"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and acknowledges the agent's helpfulness in arranging a special anniversary dinner.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "012-R0042",
+     "quote": "That's so kind, thank you. You've really been helpful.",
+     "speaker": "Customer",
+     "start": 365.0,
+     "end": 369.61
+    }
+   ],
+   "window_turn_ids": [
+    "012-R0038",
+    "012-R0040",
+    "012-R0042"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine enthusiasm and offers a complimentary upgrade and anniversary dessert, creating a highly satisfying experience.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "012-R0004",
+    "quote": "Ohh congratulations! Yes, thank you for your call today.",
+    "speaker": "Agent",
+    "start": 42.25,
+    "end": 51.2
+   },
+   {
+    "turn_id": "012-R0011",
+    "quote": "Ohh that's wonderful! Congratulations to the happy loving couple. Rare to see couples still together these days.",
+    "speaker": "Agent",
+    "start": 99.03,
+    "end": 107.57
+   },
+   {
+    "turn_id": "012-R0020",
+    "quote": "it's a little bit more expensive but totally worth (um,) the add on because of the value that you get with the view.",
+    "speaker": "Agent",
+    "start": 150.57,
+    "end": 171.48
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

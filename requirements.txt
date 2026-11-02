@@ -1,0 +1,28 @@
+# Tested with Python 3.11.9 on Windows 11. Install with: pip install -r requirements.txt && pip install -e .
+# faster-whisper is used only for the ASR comparison; sherpa-onnx only for the mono baseline.
+ctranslate2==4.8.4
+faster-whisper==1.2.1
+huggingface_hub==2.4.0
+ipykernel==7.4.0
+jiwer==4.0.0
+jupyter==1.1.1
+matplotlib==3.11.2
+nbclient==0.11.0
+nbconvert==7.17.2
+nbformat==5.11.1
+numpy==2.4.6
+onnx-asr==0.12.0
+onnxruntime==1.31.1
+openpyxl==3.1.5
+pandas==3.1.0
+pydantic==2.14.2
+pypdf==6.21.4
+pytest==9.2.0
+python-pptx==1.0.2
+PyYAML==6.0.3
+requests==2.34.2
+sherpa-onnx==2.0.1
+soundfile==0.14.0
+streamlit==1.66.1
+tqdm==4.70.1
+whisper_normalizer==1.0.0

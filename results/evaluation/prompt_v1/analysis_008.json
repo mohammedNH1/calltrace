@@ -1,0 +1,226 @@
+{
+ "call_id": "008",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer is annoyed about ads appearing even after purchasing a premium subscription.",
+   "evidence": [
+    {
+     "turn_id": "008-T0002",
+     "quote": "I'm pretty annoyed with the all that I'm getting even after purchasing the premium",
+     "speaker": "Customer",
+     "start": 12.098,
+     "end": 28.558
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent guided the customer through clearing the app cache on their Android device.",
+   "evidence": [
+    {
+     "turn_id": "008-T0029",
+     "quote": "first you have to go to settings.",
+     "speaker": "Agent",
+     "start": 261.41,
+     "end": 271.23
+    },
+    {
+     "turn_id": "008-T0036",
+     "quote": "you have to select Tune Help and go to the storage option.",
+     "speaker": "Agent",
+     "start": 305.202,
+     "end": 310.862
+    },
+    {
+     "turn_id": "008-T0040",
+     "quote": "Can you see the option called clear cache?",
+     "speaker": "Agent",
+     "start": 321.442,
+     "end": 325.102
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The customer cleared the cache and agreed to log out and log back in to test playback.",
+   "evidence": [
+    {
+     "turn_id": "008-T0049",
+     "quote": "Okay. I just cleared all the cash.",
+     "speaker": "Customer",
+     "start": 387.234,
+     "end": 391.214
+    },
+    {
+     "turn_id": "008-T0050",
+     "quote": "Awesome sir. now log out and log back in and then try playing the track.",
+     "speaker": "Agent",
+     "start": 392.498,
+     "end": 398.958
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent confirmed the issue was related to ads and explained the cause.",
+   "evidence": [
+    {
+     "turn_id": "008-T0016",
+     "quote": "So that explains it. Only the account that has premium will get ad free playback.",
+     "speaker": "Agent",
+     "start": 143.89,
+     "end": 155.95
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided specific steps to clear cache and instructed the customer to re-login.",
+   "evidence": [
+    {
+     "turn_id": "008-T0050",
+     "quote": "Awesome sir. now log out and log back in and then try playing the track.",
+     "speaker": "Agent",
+     "start": 392.498,
+     "end": 398.958
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The agent confirmed the cache was the issue and the customer agreed to test playback after clearing it.",
+   "evidence": [
+    {
+     "turn_id": "008-T0052",
+     "quote": "perfect, sir that means the cash was the issue.",
+     "speaker": "Agent",
+     "start": 408.514,
+     "end": 423.374
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses initial annoyance about ads but shifts to gratitude and enthusiasm after the technical issue is resolved and new features are explained.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "008-T0002",
+     "quote": "I'm pretty annoyed with the all that I'm getting even after purchasing the premium",
+     "speaker": "Customer",
+     "start": 12.098,
+     "end": 28.558
+    },
+    {
+     "turn_id": "008-T0051",
+     "quote": "Oh Okay. Nice time, man.",
+     "speaker": "Customer",
+     "start": 401.266,
+     "end": 407.726
+    },
+    {
+     "turn_id": "008-T0055",
+     "quote": "Okay. that's angry, man.",
+     "speaker": "Customer",
+     "start": 452.37,
+     "end": 455.07
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "negative",
+   "justification": "The customer explicitly states they are 'pretty annoyed' despite claiming to be doing great.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "008-T0002",
+     "quote": "I'm pretty annoyed with the all that I'm getting even after purchasing the premium",
+     "speaker": "Customer",
+     "start": 12.098,
+     "end": 28.558
+    }
+   ],
+   "window_turn_ids": [
+    "008-T0002",
+    "008-T0006",
+    "008-T0011"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses clear enthusiasm and satisfaction by calling the feature 'awesome' and asking if they should use it.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "008-T0059",
+     "quote": "Oh, that's nice. I didn't know about that.",
+     "speaker": "Customer",
+     "start": 511.554,
+     "end": 514.734
+    },
+    {
+     "turn_id": "008-T0061",
+     "quote": "Nice. Should we like that? That's awesome.",
+     "speaker": "Customer",
+     "start": 530.434,
+     "end": 536.174
+    }
+   ],
+   "window_turn_ids": [
+    "008-T0057",
+    "008-T0059",
+    "008-T0061"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from negative to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses relief and satisfaction upon confirming the technical issue is resolved and the customer is happy with the new features.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "008-T0050",
+    "quote": "Awesome sir.",
+    "speaker": "Agent",
+    "start": 392.498,
+    "end": 398.958
+   },
+   {
+    "turn_id": "008-T0052",
+    "quote": "perfect, sir that means the cash was the issue.",
+    "speaker": "Agent",
+    "start": 408.514,
+    "end": 423.374
+   },
+   {
+    "turn_id": "008-T0060",
+    "quote": "Oh yep.",
+    "speaker": "Agent",
+    "start": 515.202,
+    "end": 527.422
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "11% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

@@ -1,0 +1,327 @@
+{
+  "dataset": "apptek-com/apptek_callcenter_dialogues",
+  "revision": "b98967d9946f7f59f58d08624a2a00fe98fe0219",
+  "license": "CC BY-SA 4.0",
+  "seed": 20261108,
+  "rule": "one call per accent; seeded shuffle; first unused domain, else first call",
+  "catalogue_calls": 873,
+  "eligible_calls": 873,
+  "exclusions": [],
+  "selected": [
+    {
+      "source_id": "en_AU_Banking_1590914",
+      "accent": "en-AU",
+      "domain": "banking",
+      "duration_s": 633.177,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_au_male_1",
+          "file": "test/en-AU/audio/en_AU_Banking_1590914_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_au_female_3",
+          "file": "test/en-AU/audio/en_AU_Banking_1590914_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-AU/audio/en_AU_Banking_1590914.wav",
+      "n_reference_segments": 111,
+      "call_id": "001"
+    },
+    {
+      "source_id": "en_CA_RealEstate_1592209",
+      "accent": "en-CA",
+      "domain": "realestate",
+      "duration_s": 690.862,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_ca_male_3",
+          "file": "test/en-CA/audio/en_CA_RealEstate_1592209_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_ca_female_7",
+          "file": "test/en-CA/audio/en_CA_RealEstate_1592209_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-CA/audio/en_CA_RealEstate_1592209.wav",
+      "n_reference_segments": 82,
+      "call_id": "002"
+    },
+    {
+      "source_id": "en_CN_Health_1584519",
+      "accent": "en-CN",
+      "domain": "health",
+      "duration_s": 519.861,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_cn_male_1",
+          "file": "test/en-CN/audio/en_CN_Health_1584519_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_cn_female_5",
+          "file": "test/en-CN/audio/en_CN_Health_1584519_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-CN/audio/en_CN_Health_1584519.wav",
+      "n_reference_segments": 58,
+      "call_id": "003"
+    },
+    {
+      "source_id": "en_GB_Travel_1582389",
+      "accent": "en-GB",
+      "domain": "travel",
+      "duration_s": 624.467,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_gb_female_1",
+          "file": "test/en-GB/audio/en_GB_Travel_1582389_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_gb_female_5",
+          "file": "test/en-GB/audio/en_GB_Travel_1582389_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-GB/audio/en_GB_Travel_1582389.wav",
+      "n_reference_segments": 123,
+      "call_id": "004"
+    },
+    {
+      "source_id": "en_GB_SCT_Aviation_1593663",
+      "accent": "en-GB_SCT",
+      "domain": "aviation",
+      "duration_s": 358.734,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_gb_sct_female_4",
+          "file": "test/en-GB_SCT/audio/en_GB_SCT_Aviation_1593663_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_gb_sct_female_5",
+          "file": "test/en-GB_SCT/audio/en_GB_SCT_Aviation_1593663_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-GB_SCT/audio/en_GB_SCT_Aviation_1593663.wav",
+      "n_reference_segments": 73,
+      "call_id": "005"
+    },
+    {
+      "source_id": "en_GB_WLS_Energy_1593355",
+      "accent": "en-GB_WLS",
+      "domain": "energy",
+      "duration_s": 582.36,
+      "channels": {
+        "1": {
+          "role": "customer",
+          "speaker_id": "speaker_en_gb_wls_female_4",
+          "file": "test/en-GB_WLS/audio/en_GB_WLS_Energy_1593355_channel1.wav"
+        },
+        "2": {
+          "role": "agent",
+          "speaker_id": "speaker_en_gb_wls_male_4",
+          "file": "test/en-GB_WLS/audio/en_GB_WLS_Energy_1593355_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-GB_WLS/audio/en_GB_WLS_Energy_1593355.wav",
+      "n_reference_segments": 103,
+      "call_id": "006"
+    },
+    {
+      "source_id": "en_IE_Food_1592985",
+      "accent": "en-IE",
+      "domain": "food",
+      "duration_s": 902.865,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_ie_female_1",
+          "file": "test/en-IE/audio/en_IE_Food_1592985_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_ie_female_2",
+          "file": "test/en-IE/audio/en_IE_Food_1592985_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-IE/audio/en_IE_Food_1592985.wav",
+      "n_reference_segments": 188,
+      "call_id": "007"
+    },
+    {
+      "source_id": "en_IN_Entertainment_002_20250918",
+      "accent": "en-IN",
+      "domain": "entertainment",
+      "duration_s": 586.133,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_in_male_5",
+          "file": "test/en-IN/audio/en_IN_Entertainment_002_20250918_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_in_male_6",
+          "file": "test/en-IN/audio/en_IN_Entertainment_002_20250918_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-IN/audio/en_IN_Entertainment_002_20250918.wav",
+      "n_reference_segments": 76,
+      "call_id": "008"
+    },
+    {
+      "source_id": "en_MX_DeliveryService_1587298",
+      "accent": "en-MX",
+      "domain": "deliveryservice",
+      "duration_s": 781.155,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_mx_female_2",
+          "file": "test/en-MX/audio/en_MX_DeliveryService_1587298_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_mx_female_4",
+          "file": "test/en-MX/audio/en_MX_DeliveryService_1587298_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-MX/audio/en_MX_DeliveryService_1587298.wav",
+      "n_reference_segments": 140,
+      "call_id": "009"
+    },
+    {
+      "source_id": "en_SG_Telecom_1586744",
+      "accent": "en-SG",
+      "domain": "telecom",
+      "duration_s": 888.0,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_sg_female_3",
+          "file": "test/en-SG/audio/en_SG_Telecom_1586744_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_sg_male_4",
+          "file": "test/en-SG/audio/en_SG_Telecom_1586744_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-SG/audio/en_SG_Telecom_1586744.wav",
+      "n_reference_segments": 254,
+      "call_id": "010"
+    },
+    {
+      "source_id": "en_US_Aave_Finance_1593115",
+      "accent": "en-US_Aave",
+      "domain": "finance",
+      "duration_s": 390.032,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_us_aave_female_6",
+          "file": "test/en-US_Aave/audio/en_US_Aave_Finance_1593115_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_us_aave_female_7",
+          "file": "test/en-US_Aave/audio/en_US_Aave_Finance_1593115_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-US_Aave/audio/en_US_Aave_Finance_1593115.wav",
+      "n_reference_segments": 70,
+      "call_id": "011"
+    },
+    {
+      "source_id": "en_US_General_Hospitality_1586593",
+      "accent": "en-US_General",
+      "domain": "hospitality",
+      "duration_s": 400.303,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_us_general_female_2",
+          "file": "test/en-US_General/audio/en_US_General_Hospitality_1586593_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_us_general_female_6",
+          "file": "test/en-US_General/audio/en_US_General_Hospitality_1586593_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-US_General/audio/en_US_General_Hospitality_1586593.wav",
+      "n_reference_segments": 46,
+      "call_id": "012"
+    },
+    {
+      "source_id": "en_US_Southern_Retail_1588125",
+      "accent": "en-US_Southern",
+      "domain": "retail",
+      "duration_s": 562.044,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_us_southern_female_1",
+          "file": "test/en-US_Southern/audio/en_US_Southern_Retail_1588125_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_us_southern_female_6",
+          "file": "test/en-US_Southern/audio/en_US_Southern_Retail_1588125_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-US_Southern/audio/en_US_Southern_Retail_1588125.wav",
+      "n_reference_segments": 59,
+      "call_id": "013"
+    },
+    {
+      "source_id": "en_ZA_Technology_1582769",
+      "accent": "en-ZA",
+      "domain": "technology",
+      "duration_s": 546.393,
+      "channels": {
+        "1": {
+          "role": "agent",
+          "speaker_id": "speaker_en_za_male_1",
+          "file": "test/en-ZA/audio/en_ZA_Technology_1582769_channel1.wav"
+        },
+        "2": {
+          "role": "customer",
+          "speaker_id": "speaker_en_za_female_1",
+          "file": "test/en-ZA/audio/en_ZA_Technology_1582769_channel2.wav"
+        }
+      },
+      "merged_file": "diarization/en-ZA/audio/en_ZA_Technology_1582769.wav",
+      "n_reference_segments": 122,
+      "call_id": "014"
+    }
+  ],
+  "pilot": {
+    "source_id": "en_US_General_Travel_1586358",
+    "accent": "en-US_General",
+    "domain": "travel",
+    "duration_s": 604.403,
+    "channels": {
+      "1": {
+        "role": "customer",
+        "speaker_id": "speaker_en_us_general_male_3",
+        "file": "test/en-US_General/audio/en_US_General_Travel_1586358_channel1.wav"
+      },
+      "2": {
+        "role": "agent",
+        "speaker_id": "speaker_en_us_general_female_5",
+        "file": "test/en-US_General/audio/en_US_General_Travel_1586358_channel2.wav"
+      }
+    },
+    "merged_file": "diarization/en-US_General/audio/en_US_General_Travel_1586358.wav",
+    "n_reference_segments": 139,
+    "call_id": "pilot"
+  }
+}

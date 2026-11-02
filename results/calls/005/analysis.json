@@ -1,0 +1,240 @@
+{
+ "call_id": "005",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wants to change their flight from tomorrow to Wednesday after six o'clock.",
+   "evidence": [
+    {
+     "turn_id": "005-T0012",
+     "quote": "So you booked for tomorrow's flight, but we need to change that, isn't that correct, until Wednesday after six o'clock?",
+     "speaker": "Agent",
+     "start": 106.898,
+     "end": 133.678
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent checked availability and found the last seat available for the 9:30 flight.",
+   "evidence": [
+    {
+     "turn_id": "005-T0021",
+     "quote": "And let's have a look.",
+     "speaker": "Agent",
+     "start": 194.386,
+     "end": 197.966
+    },
+    {
+     "turn_id": "005-T0022",
+     "quote": "Yes, we have got the last seat on there for you.",
+     "speaker": "Agent",
+     "start": 199.986,
+     "end": 221.966
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "unclear",
+   "text": "The agent requested payment details which the customer declined, and the call ended without confirming the change.",
+   "evidence": [
+    {
+     "turn_id": "005-T0026",
+     "quote": "I will need to take payment for making that change. can you give me your bank details, please?",
+     "speaker": "Agent",
+     "start": 246.178,
+     "end": 267.278
+    },
+    {
+     "turn_id": "005-T0027",
+     "quote": "No thank you. No thank you.",
+     "speaker": "Customer",
+     "start": 259.314,
+     "end": 263.534
+    },
+    {
+     "turn_id": "005-T0036",
+     "quote": "Thank you, and yourself. Goodbye now.",
+     "speaker": "Customer",
+     "start": 337.41,
+     "end": 339.63
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's request to change the flight.",
+   "evidence": [
+    {
+     "turn_id": "005-T0012",
+     "quote": "So you booked for tomorrow's flight, but we need to change that, isn't that correct, until Wednesday after six o'clock?",
+     "speaker": "Agent",
+     "start": 106.898,
+     "end": 133.678
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "no",
+   "note": "No specific action was completed because the customer refused to provide payment details.",
+   "evidence": [
+    {
+     "turn_id": "005-T0027",
+     "quote": "No thank you. No thank you.",
+     "speaker": "Customer",
+     "start": 259.314,
+     "end": 263.534
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The flight change was not confirmed as the customer declined to pay the fee.",
+   "evidence": [
+    {
+     "turn_id": "005-T0027",
+     "quote": "No thank you. No thank you.",
+     "speaker": "Customer",
+     "start": 259.314,
+     "end": 263.534
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief at the agent's helpfulness despite their initial confusion.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-T0020",
+     "quote": "Yes, please, that would be so helpful.",
+     "speaker": "Customer",
+     "start": 193.666,
+     "end": 196.766
+    },
+    {
+     "turn_id": "005-T0033",
+     "quote": "You've been quite helpful today.",
+     "speaker": "Customer",
+     "start": 309.17,
+     "end": 313.07
+    },
+    {
+     "turn_id": "005-T0036",
+     "quote": "Thank you, and yourself.",
+     "speaker": "Customer",
+     "start": 337.41,
+     "end": 339.63
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual information and confirms details without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-T0001",
+     "quote": "And the last four digits are five, zero, four, nine.",
+     "speaker": "Customer",
+     "start": 1.522,
+     "end": 7.502
+    },
+    {
+     "turn_id": "005-T0002",
+     "quote": "Yep. is it the C V the C number that you want?",
+     "speaker": "Customer",
+     "start": 11.202,
+     "end": 19.822
+    },
+    {
+     "turn_id": "005-T0004",
+     "quote": "Okay. so the sort the sort code did you say? Okay. that is two one, two, three zero.",
+     "speaker": "Customer",
+     "start": 26.722,
+     "end": 39.422
+    }
+   ],
+   "window_turn_ids": [
+    "005-T0001",
+    "005-T0002",
+    "005-T0004"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude by stating the agent was helpful and offers a polite farewell.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "005-T0033",
+     "quote": "You've been quite helpful today.",
+     "speaker": "Customer",
+     "start": 309.17,
+     "end": 313.07
+    },
+    {
+     "turn_id": "005-T0036",
+     "quote": "Thank you, and yourself.",
+     "speaker": "Customer",
+     "start": 337.41,
+     "end": 339.63
+    }
+   ],
+   "window_turn_ids": [
+    "005-T0028",
+    "005-T0033",
+    "005-T0036"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine enthusiasm and satisfaction upon confirming the customer's details and successfully booking the flight.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "005-T0010",
+    "quote": "Fabulous.",
+    "speaker": "Agent",
+    "start": 100.93,
+    "end": 105.63
+   },
+   {
+    "turn_id": "005-T0012",
+    "quote": "Perfect.",
+    "speaker": "Agent",
+    "start": 106.898,
+    "end": 133.678
+   },
+   {
+    "turn_id": "005-T0032",
+    "quote": "that's perfect.",
+    "speaker": "Agent",
+    "start": 308.034,
+    "end": 315.294
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "Speakers overlap on 61% of the quieter speaker's time: the channels may be out of sync, so turn order, the summary, and the sentiment windows are unreliable.",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

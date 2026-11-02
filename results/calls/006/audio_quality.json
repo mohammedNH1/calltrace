@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_GB_WLS_Energy_1593355_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 582.36,
+  "peak": 1.0,
+  "clipped_share": 0.0,
+  "active_share": 0.1759,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.0385,
+  "sha256": "7aa94fdb7c954773b8dda948dd511d7f14c7a1de913cc163d50a2c8379a6316f"
+ },
+ "2": {
+  "file": "en_GB_WLS_Energy_1593355_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 582.36,
+  "peak": 1.0,
+  "clipped_share": 0.0,
+  "active_share": 0.3786,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.06741,
+  "sha256": "bbbf41400fb998866d7badfef103d4e43b4943b401241ad3f60887d650f83ad9"
+ }
+}

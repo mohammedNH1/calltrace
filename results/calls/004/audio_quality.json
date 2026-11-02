@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_GB_Travel_1582389_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 624.466,
+  "peak": 0.9942,
+  "clipped_share": 0.0,
+  "active_share": 0.345,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.07104,
+  "sha256": "8e84d6a1cecc8082f2c314174442d34ec7d3972610e6eabd102b4cc35a5bc3ec"
+ },
+ "2": {
+  "file": "en_GB_Travel_1582389_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 624.467,
+  "peak": 1.0,
+  "clipped_share": 4e-06,
+  "active_share": 0.3339,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.12776,
+  "sha256": "74f6c1dd333498fa00df5482748f7993e7936bb6f14399f7e044b3f5f0ea1db1"
+ }
+}

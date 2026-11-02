@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_IN_Entertainment_002_20250918_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 586.133,
+  "peak": 0.6183,
+  "clipped_share": 0.0,
+  "active_share": 0.3032,
+  "noise_floor_rms": 3e-05,
+  "speech_rms": 0.07564,
+  "sha256": "7401219becbf8386845b34751ae018e3f71a69440c18b31220ffdb03eeaa7d76"
+ },
+ "2": {
+  "file": "en_IN_Entertainment_002_20250918_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 586.133,
+  "peak": 0.7106,
+  "clipped_share": 0.0,
+  "active_share": 0.1795,
+  "noise_floor_rms": 3e-05,
+  "speech_rms": 0.07844,
+  "sha256": "b19b67db4628cad3265061e8699d866b7dd9223cbd1b712dc5a3aa6c56dfcc60"
+ }
+}

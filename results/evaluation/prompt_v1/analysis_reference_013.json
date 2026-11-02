@@ -1,0 +1,212 @@
+{
+ "call_id": "013",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted to know if bright yellow Converse sneakers were in stock.",
+   "evidence": [
+    {
+     "turn_id": "013-R0004",
+     "quote": "I was wondering if you have those in stock?",
+     "speaker": "Customer",
+     "start": 31.48,
+     "end": 41.36
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent asked for more specific details about the shoe model and color.",
+   "evidence": [
+    {
+     "turn_id": "013-R0005",
+     "quote": "Could you please be a little more specific?",
+     "speaker": "Agent",
+     "start": 42.64,
+     "end": 49.6
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent agreed to reserve the shoes for pickup in Greenberg, Alabama, for 24 hours.",
+   "evidence": [
+    {
+     "turn_id": "013-R0050",
+     "quote": "Yes, so we could reserve those but we can only do that for twenty-four hours.",
+     "speaker": "Agent",
+     "start": 391.84,
+     "end": 403.74
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's request for stock availability.",
+   "evidence": [
+    {
+     "turn_id": "013-R0037",
+     "quote": "you were wondering if we have this in store, or available?",
+     "speaker": "Agent",
+     "start": 298.66,
+     "end": 311.64
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed the ability to reserve the specific shoes for pickup.",
+   "evidence": [
+    {
+     "turn_id": "013-R0050",
+     "quote": "Yes, so we could reserve those but we can only do that for twenty-four hours.",
+     "speaker": "Agent",
+     "start": 391.84,
+     "end": 403.74
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The agent confirmed the specific shoe model, location, and reservation policy.",
+   "evidence": [
+    {
+     "turn_id": "013-R0050",
+     "quote": "Yes, so we could reserve those but we can only do that for twenty-four hours.",
+     "speaker": "Agent",
+     "start": 391.84,
+     "end": 403.74
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "neutral",
+   "justification": "The customer provides factual information and asks routine questions without expressing strong positive or negative emotions.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-R0004",
+     "quote": "these bright yellow Converse sneakers and I was wondering if you have those in stock?",
+     "speaker": "Customer",
+     "start": 31.48,
+     "end": 41.36
+    },
+    {
+     "turn_id": "013-R0007",
+     "quote": "And but I was wondering if there was, if it's available in other colors?",
+     "speaker": "Customer",
+     "start": 65.24,
+     "end": 77.98
+    },
+    {
+     "turn_id": "013-R0013",
+     "quote": "Yeah, okay. Hang on, let me just. Let me just look up something.",
+     "speaker": "Customer",
+     "start": 128.46,
+     "end": 132.18
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides plain information about a product inquiry without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-R0003",
+     "quote": "Yeah, I so, I was looking online, and I found this store and it's, I saw that you guys had this",
+     "speaker": "Customer",
+     "start": 21.1,
+     "end": 31.28
+    },
+    {
+     "turn_id": "013-R0004",
+     "quote": "these bright yellow Converse sneakers and I was wondering if you have those in stock?",
+     "speaker": "Customer",
+     "start": 31.48,
+     "end": 41.36
+    },
+    {
+     "turn_id": "013-R0006",
+     "quote": "Well, they're Converse sneakers, so that's like, a brand name. And they're yellow.",
+     "speaker": "Customer",
+     "start": 50.72,
+     "end": 64.74
+    }
+   ],
+   "window_turn_ids": [
+    "013-R0003",
+    "013-R0004",
+    "013-R0006"
+   ]
+  },
+  "ending": {
+   "label": "insufficient_evidence",
+   "justification": "The customer's questions and brief inquiries do not express a clear positive, negative, or mixed sentiment.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "013-R0053",
+     "quote": "do you have like, a return or an exchange policy?",
+     "speaker": "Customer",
+     "start": 418.24,
+     "end": 421.26
+    },
+    {
+     "turn_id": "013-R0056",
+     "quote": "Okay. Well, also something else. I'm a loyalty member for this particular store and I was wondering if my points could be applied to this purchase?",
+     "speaker": "Customer",
+     "start": 447.96,
+     "end": 455.8
+    },
+    {
+     "turn_id": "013-R0058",
+     "quote": "Hello? Are you there?",
+     "speaker": "Customer",
+     "start": 474.34,
+     "end": 484.6
+    }
+   ],
+   "window_turn_ids": [
+    "013-R0053",
+    "013-R0056",
+    "013-R0058"
+   ]
+  },
+  "change": "insufficient_evidence",
+  "change_note": "At least one window lacks enough evidence."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent provides factual information and asks clarifying questions without expressing strong positive or negative emotions.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "013-R0012",
+    "quote": "Okay, well The But that was remade several times. So, there's the remake two, there's also the what is it called? The, ohh, the",
+    "speaker": "Agent",
+    "start": 113.38,
+    "end": 127.14
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": false,
+  "errors": [
+   "agent_sentiment: quote not found in 013-R0012: \"Okay, well The But that was remade several times. So, there's the remake two, there's also the what is it called? The, ohh, the\"",
+   "quote not in 013-R0012: \"Okay, well The But that was remade several times. So, there's the remake two, there's also the what is it called? The, ohh, the\""
+  ],
+  "retries_used": 2
+ },
+ "notes_limitations": []
+}

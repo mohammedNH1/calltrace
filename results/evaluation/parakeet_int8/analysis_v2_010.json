@@ -1,0 +1,219 @@
+{
+ "call_id": "010",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "I'm having some issues setting up my wifi here and all but because so you always have that cable.",
+   "evidence": [
+    {
+     "turn_id": "010-T0006",
+     "quote": "Anyway. yeah. But anyway, I don't want to call in because I'm having some issues setting up my wifi here and all but because so you always have that cable.",
+     "speaker": "Customer",
+     "start": 19.298,
+     "end": 44.798
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent instructed the customer to hold the reset button for ten seconds.",
+   "evidence": [
+    {
+     "turn_id": "010-T0025",
+     "quote": "No, when you press the reset right, then you can hold it for like ten seconds. Yeah. And usually Yeah, usually it should be able to the lights are supposed to light up properly",
+     "speaker": "Agent",
+     "start": 127.858,
+     "end": 146.43
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The customer confirmed the wifi was working after performing the reset.",
+   "evidence": [
+    {
+     "turn_id": "010-T0047",
+     "quote": "Oh no, I finally my wifi can",
+     "speaker": "Customer",
+     "start": 282.562,
+     "end": 285.422
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the issue and provided a solution.",
+   "evidence": [
+    {
+     "turn_id": "010-T0023",
+     "quote": "yeah, you just need to try we can try different options to see whether it works.",
+     "speaker": "Agent",
+     "start": 115.698,
+     "end": 122.318
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent provided specific steps to reset the modem.",
+   "evidence": [
+    {
+     "turn_id": "010-T0025",
+     "quote": "No, when you press the reset right, then you can hold it for like ten seconds. Yeah. And usually Yeah, usually it should be able to the lights are supposed to light up properly",
+     "speaker": "Agent",
+     "start": 127.858,
+     "end": 146.43
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The customer confirmed the wifi was working after the agent's instructions.",
+   "evidence": [
+    {
+     "turn_id": "010-T0048",
+     "quote": "it's working now.",
+     "speaker": "Agent",
+     "start": 286.546,
+     "end": 289.246
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses frustration over the initial technical issues and the inability to add sports channels, but concludes with gratitude for the agent's help and a positive resolution.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0006",
+     "quote": "I don't want to call in because I'm having some issues setting up my wifi here",
+     "speaker": "Customer",
+     "start": 19.298,
+     "end": 44.798
+    },
+    {
+     "turn_id": "010-T0092",
+     "quote": "You sound heavy turn. We want to check yours, nobody knows.",
+     "speaker": "Customer",
+     "start": 657.842,
+     "end": 661.422
+    },
+    {
+     "turn_id": "010-T0113",
+     "quote": "I appreciate the solution.",
+     "speaker": "Customer",
+     "start": 808.098,
+     "end": 830.142
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides plain information about their situation without expressing clear positive or negative emotions.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0003",
+     "quote": "Yeah, same time, guys. Yeah.",
+     "speaker": "Customer",
+     "start": 8.658,
+     "end": 13.758
+    },
+    {
+     "turn_id": "010-T0006",
+     "quote": "Anyway. yeah. But anyway, I don't want to call in because I'm having some issues setting up my wifi here and all but because so you always have that cable. And then the LDD fix everything and all that stuff in it, but then now my wifi is having some issues when I'm setting it up. So you assist me on this",
+     "speaker": "Customer",
+     "start": 19.298,
+     "end": 44.798
+    },
+    {
+     "turn_id": "010-T0009",
+     "quote": "yes, I'm in a",
+     "speaker": "Customer",
+     "start": 50.578,
+     "end": 51.998
+    }
+   ],
+   "window_turn_ids": [
+    "010-T0003",
+    "010-T0006",
+    "010-T0009"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer explicitly states they were helped a lot and calls the agent's suggestion a 'good idea' and 'great'.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "010-T0120",
+     "quote": "a good idea. Yeah, of course.",
+     "speaker": "Customer",
+     "start": 854.85,
+     "end": 859.55
+    },
+    {
+     "turn_id": "010-T0122",
+     "quote": "Great. I mean great, Mr. Anthony, I think you helped me a lot.",
+     "speaker": "Customer",
+     "start": 863.33,
+     "end": 874.03
+    }
+   ],
+   "window_turn_ids": [
+    "010-T0120",
+    "010-T0122",
+    "010-T0124"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "neutral",
+  "justification": "The agent's turns consist of standard service procedures, factual information, and polite closings without expressing strong personal emotion.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "010-T0002",
+    "quote": "Hi. This is come yeah, this is from Tsingtao.",
+    "speaker": "Agent",
+    "start": 3.282,
+    "end": 8.222
+   },
+   {
+    "turn_id": "010-T0005",
+    "quote": "Yes, sorry for waiting.",
+    "speaker": "Agent",
+    "start": 19.042,
+    "end": 21.102
+   },
+   {
+    "turn_id": "010-T0010",
+    "quote": "Okay. have you tried switching on and off for the switch for the modem?",
+    "speaker": "Agent",
+    "start": 52.898,
+    "end": 61.198
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "22% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

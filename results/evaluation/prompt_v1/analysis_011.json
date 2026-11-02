@@ -1,0 +1,219 @@
+{
+ "call_id": "011",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "Customer wants a $100,000 investment loan to open a beauty shop.",
+   "evidence": [
+    {
+     "turn_id": "011-T0002",
+     "quote": "I I'm looking I'm looking to get an investment loan.",
+     "speaker": "Customer",
+     "start": 18.85,
+     "end": 26.03
+    },
+    {
+     "turn_id": "011-T0004",
+     "quote": "I need a hundred thousand dollars.",
+     "speaker": "Customer",
+     "start": 34.29,
+     "end": 50.654
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "Agent asked for credit score, existing loan history, and current capital.",
+   "evidence": [
+    {
+     "turn_id": "011-T0005",
+     "quote": "the first thing we need to find out what your credit score is.",
+     "speaker": "Agent",
+     "start": 52.258,
+     "end": 61.758
+    },
+    {
+     "turn_id": "011-T0007",
+     "quote": "how much capital do you have?",
+     "speaker": "Agent",
+     "start": 66.098,
+     "end": 74.238
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "Agent confirmed customer qualifies for loans based on credit score and paid-off history.",
+   "evidence": [
+    {
+     "turn_id": "011-T0022",
+     "quote": "that show you as a good credit risk, which makes sense why your score is so high.",
+     "speaker": "Agent",
+     "start": 265.746,
+     "end": 281.806
+    },
+    {
+     "turn_id": "011-T0024",
+     "quote": "If you could follow with me and answer specifically as I ask, we'll get through this process",
+     "speaker": "Agent",
+     "start": 282.866,
+     "end": 298.066
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "Agent restated the loan request and qualification criteria.",
+   "evidence": [
+    {
+     "turn_id": "011-T0011",
+     "quote": "I know you want an investment loan.",
+     "speaker": "Agent",
+     "start": 113.058,
+     "end": 131.938
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "Agent outlined the verification steps for the loan application.",
+   "evidence": [
+    {
+     "turn_id": "011-T0026",
+     "quote": "the first thing, 750 credit score check.",
+     "speaker": "Agent",
+     "start": 298.066,
+     "end": 309.87
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unclear",
+   "note": "Call ended before loan approval or denial was finalized.",
+   "evidence": [
+    {
+     "turn_id": "011-T0036",
+     "quote": "All right, well that's gonna go very far.",
+     "speaker": "Agent",
+     "start": 381.298,
+     "end": 389.678
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses excitement about their business venture but becomes frustrated and defensive when the agent questions their loan history.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "011-T0002",
+     "quote": "I I'm looking I'm looking to get an investment loan.",
+     "speaker": "Customer",
+     "start": 18.85,
+     "end": 26.03
+    },
+    {
+     "turn_id": "011-T0010",
+     "quote": "I really don't know what I'm doing. I need some help",
+     "speaker": "Customer",
+     "start": 96.802,
+     "end": 111.502
+    },
+    {
+     "turn_id": "011-T0017",
+     "quote": "that's not what I'm saying. I'm not stupid.",
+     "speaker": "Customer",
+     "start": 208.754,
+     "end": 212.094
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer states a business goal and requests a loan without expressing frustration, complaint, or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "011-T0004",
+     "quote": "I'm just trying I'm trying to grow my business, you know what I mean?",
+     "speaker": "Customer",
+     "start": 34.29,
+     "end": 50.654
+    },
+    {
+     "turn_id": "011-T0004",
+     "quote": "And I'm gonna open a beauty shop and so I need a hundred thousand dollars.",
+     "speaker": "Customer",
+     "start": 34.29,
+     "end": 50.654
+    }
+   ],
+   "window_turn_ids": [
+    "011-T0002",
+    "011-T0004",
+    "011-T0006"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer explicitly states they are 'really excited' about the process.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "011-T0033",
+     "quote": "I'm just really excited",
+     "speaker": "Customer",
+     "start": 355.25,
+     "end": 361.71
+    }
+   ],
+   "window_turn_ids": [
+    "011-T0021",
+    "011-T0033",
+    "011-T0035"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses relief and satisfaction as the customer confirms their loan history is clean, stating 'That works' and 'That works in your favor'.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "011-T0022",
+    "quote": "Okay. That works.",
+    "speaker": "Agent",
+    "start": 265.746,
+    "end": 281.806
+   },
+   {
+    "turn_id": "011-T0022",
+    "quote": "That works in your favor",
+    "speaker": "Agent",
+    "start": 265.746,
+    "end": 281.806
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 1
+ },
+ "notes_limitations": [
+  "3% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

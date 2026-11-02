@@ -1,0 +1,26 @@
+{
+ "1": {
+  "file": "en_ZA_Technology_1582769_channel1.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 546.393,
+  "peak": 1.0,
+  "clipped_share": 1e-06,
+  "active_share": 0.4574,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.07476,
+  "sha256": "8fefc6859657e62ca8308b5700f862062ebe1faeaa7e1f21601772dd9b7a0f03"
+ },
+ "2": {
+  "file": "en_ZA_Technology_1582769_channel2.wav",
+  "samplerate": 16000,
+  "channels": 1,
+  "duration_s": 546.393,
+  "peak": 0.929,
+  "clipped_share": 0.0,
+  "active_share": 0.2067,
+  "noise_floor_rms": 0.0,
+  "speech_rms": 0.05584,
+  "sha256": "2d65e781ea1d295b637455197eedce713b4ca8f35a886b3603370a9e3c50829d"
+ }
+}

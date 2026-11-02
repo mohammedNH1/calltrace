@@ -1,0 +1,41 @@
+﻿call_id,field,on_asr,on_reference,exact_match
+005,issue,The customer wants to change their flight from tomorrow to Wednesday after six o'clock.,The customer wanted to change their flight booking due to potential bad weather.,False
+005,action,The agent checked availability and found the last seat available for the 9:30 flight.,The agent searched for available seats and identified a fee for the change.,False
+005,outcome,"The agent requested payment details which the customer declined, and the call ended without confirming the change.",The agent offered to book the change but the customer declined payment.,False
+005,resolution,unresolved,unresolved,True
+005,sentiment_overall,positive,positive,True
+005,sentiment_beginning,neutral,neutral,True
+005,sentiment_ending,positive,negative,False
+005,sentiment_change,improved,worsened,False
+007,issue,"The customer wanted to inquire about catering services for a birthday brunch with 15 people, including dietary restrictions for gluten-free guests.",Sarah called to inquire about catering services for a birthday brunch.,False
+007,action,"The agent explained menu options, pricing, delivery times, and additional service packages available for the event.","The agent gathered details, presented menu options, and calculated pricing.",False
+007,outcome,The agent agreed to send an email confirmation and noted that payment would be collected on the day of the event.,The agent agreed to send an email confirmation and noted the customer would decide on drinks later.,False
+007,resolution,unresolved,unresolved,True
+007,sentiment_overall,positive,positive,True
+007,sentiment_beginning,neutral,neutral,True
+007,sentiment_ending,positive,positive,True
+007,sentiment_change,improved,improved,True
+008,issue,The customer reported receiving ads despite having a premium subscription.,The customer reported receiving ads despite having a premium subscription.,True
+008,action,The agent verified the customer's email and guided them through clearing the app cache.,The agent verified the customer's email and confirmed the premium subscription was active.,False
+008,outcome,"The customer cleared the cache and confirmed ads were gone, but the agent offered further premium features.","The agent guided the customer to clear the app cache, which resolved the ad issue.",False
+008,resolution,confirmed,confirmed,True
+008,sentiment_overall,positive,mixed,False
+008,sentiment_beginning,negative,negative,True
+008,sentiment_ending,positive,positive,True
+008,sentiment_change,improved,improved,True
+010,issue,The customer reported Wi-Fi setup issues and later requested to add football channels.,The customer reported Wi-Fi setup issues after installers arrived and asked for assistance.,False
+010,action,The agent guided the customer through a modem reset and later offered to send feedback about the installer.,The agent guided the customer through resetting the modem and checking the system status.,False
+010,outcome,"The customer confirmed the Wi-Fi works after the reset, and the agent agreed to send an email regarding the installer.",The agent confirmed the Wi-Fi was working but agreed to escalate the installer complaint via email.,False
+010,resolution,confirmed,confirmed,True
+010,sentiment_overall,mixed,mixed,True
+010,sentiment_beginning,neutral,neutral,True
+010,sentiment_ending,positive,positive,True
+010,sentiment_change,improved,improved,True
+012,issue,The customer requested a room upgrade for their upcoming anniversary booking.,The customer requested a room upgrade for their upcoming anniversary booking.,True
+012,action,"The agent reviewed the booking, explained upgrade options, and confirmed an early check-in arrangement.",The agent retrieved the booking details and explained available upgrade options with prices.,False
+012,outcome,"The agent upgraded the room, arranged a dinner reservation, and promised to email the updated confirmation.","The agent confirmed the upgrade, arranged a dinner reservation, and promised an email confirmation.",False
+012,resolution,confirmed,confirmed,True
+012,sentiment_overall,positive,positive,True
+012,sentiment_beginning,positive,neutral,False
+012,sentiment_ending,positive,positive,True
+012,sentiment_change,unchanged,improved,False

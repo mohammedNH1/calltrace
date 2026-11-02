@@ -1,0 +1,239 @@
+{
+ "call_id": "007",
+ "transcript_source": "reference",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "Sarah called to inquire about catering services for a birthday brunch.",
+   "evidence": [
+    {
+     "turn_id": "007-R0006",
+     "quote": "it would be possible to have you cater for this brunch.",
+     "speaker": "Customer",
+     "start": 48.34,
+     "end": 51.44
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent gathered details, presented menu options, and calculated pricing.",
+   "evidence": [
+    {
+     "turn_id": "007-R0014",
+     "quote": "we actually have several brunch packages, and we can also customize the menus.",
+     "speaker": "Agent",
+     "start": 93.04,
+     "end": 103.14
+    },
+    {
+     "turn_id": "007-R0072",
+     "quote": "the cost for the classic brunch is twenty eight dollars per person.",
+     "speaker": "Agent",
+     "start": 365.34,
+     "end": 374.64
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent agreed to send an email confirmation and noted the customer would decide on drinks later.",
+   "evidence": [
+    {
+     "turn_id": "007-R0179",
+     "quote": "If you could send me an email just to confirm everything, that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.24,
+     "end": 879.14
+    },
+    {
+     "turn_id": "007-R0172",
+     "quote": "I might have a think about the drinks and come back to you later on today.",
+     "speaker": "Customer",
+     "start": 858.24,
+     "end": 862.04
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent acknowledged the request for a confirmation email.",
+   "evidence": [
+    {
+     "turn_id": "007-R0180",
+     "quote": "Of course, yeah. That's what we'll do.",
+     "speaker": "Agent",
+     "start": 879.54,
+     "end": 889.74
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "The agent confirmed they would send an email and the customer would return later regarding drinks.",
+   "evidence": [
+    {
+     "turn_id": "007-R0180",
+     "quote": "Of course, yeah. That's what we'll do.",
+     "speaker": "Agent",
+     "start": 879.54,
+     "end": 889.74
+    },
+    {
+     "turn_id": "007-R0172",
+     "quote": "I might have a think about the drinks and come back to you later on today.",
+     "speaker": "Customer",
+     "start": 858.24,
+     "end": 862.04
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "unresolved",
+   "note": "The customer indicated they would decide on drinks later, so the full request was not completed.",
+   "evidence": [
+    {
+     "turn_id": "007-R0172",
+     "quote": "I might have a think about the drinks and come back to you later on today.",
+     "speaker": "Customer",
+     "start": 858.24,
+     "end": 862.04
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear satisfaction and gratitude, citing specific positive outcomes like local sourcing and gluten-free options.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-R0068",
+     "quote": "Okay, amazing. (Um,) that's fantastic.",
+     "speaker": "Customer",
+     "start": 342.04,
+     "end": 345.54
+    },
+    {
+     "turn_id": "007-R0170",
+     "quote": "Yeah, that's fine. That's absolutely fine.",
+     "speaker": "Customer",
+     "start": 854.24,
+     "end": 856.94
+    },
+    {
+     "turn_id": "007-R0179",
+     "quote": "If you could send me an email just to confirm everything, that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.24,
+     "end": 879.14
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual details about their event and inquiry without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-R0004",
+     "quote": "I wanted to get some more information because I have a birthday brunch",
+     "speaker": "Customer",
+     "start": 30.14,
+     "end": 40.14
+    },
+    {
+     "turn_id": "007-R0005",
+     "quote": "this Saturday that's coming up, and I want to invite fifteen people",
+     "speaker": "Customer",
+     "start": 41.14,
+     "end": 48.24
+    },
+    {
+     "turn_id": "007-R0006",
+     "quote": "it would be possible to have you cater for this brunch.",
+     "speaker": "Customer",
+     "start": 48.34,
+     "end": 51.44
+    }
+   ],
+   "window_turn_ids": [
+    "007-R0004",
+    "007-R0005",
+    "007-R0006"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses gratitude and relief by saying 'Thank you so much' after confirming the resolution.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "007-R0179",
+     "quote": "that would be fantastic.",
+     "speaker": "Customer",
+     "start": 874.24,
+     "end": 879.14
+    },
+    {
+     "turn_id": "007-R0184",
+     "quote": "Thank you so much.",
+     "speaker": "Customer",
+     "start": 892.94,
+     "end": 895.54
+    }
+   ],
+   "window_turn_ids": [
+    "007-R0177",
+    "007-R0179",
+    "007-R0184"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses genuine enthusiasm and satisfaction by using phrases like 'Ohh of course, exactly' and 'Beautiful' to validate the customer's choice.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "007-R0152",
+    "quote": "Ohh of course, exactly. So you want to make it memorable Beautiful, okay.",
+    "speaker": "Agent",
+    "start": 758.14,
+    "end": 763.24
+   },
+   {
+    "turn_id": "007-R0173",
+    "quote": "Yeah, beautiful.",
+    "speaker": "Agent",
+    "start": 862.44,
+    "end": 863.74
+   },
+   {
+    "turn_id": "007-R0175",
+    "quote": "Of course, yeah, that's the finest.",
+    "speaker": "Agent",
+    "start": 864.84,
+    "end": 866.94
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 2
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

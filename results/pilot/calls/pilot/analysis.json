@@ -1,0 +1,220 @@
+{
+ "call_id": "pilot",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v2",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "The customer wanted to book a vacation package for a family of four to Tokyo Disneyland and Disney Sea.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0003",
+     "quote": "Hi, I am calling to book a vacation package to Tokyo, Disneyland, and Disney Sea for a family of four, please.",
+     "speaker": "Customer",
+     "start": 25.042,
+     "end": 38.862
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "The agent explained available packages, pricing differences between months, and hotel options.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0007",
+     "quote": "we do have some special getaway packages in June. and as well as for August we do have a promotional campaign just to keep up with the competitive pricing and that would be the middle of August. so we have some options for you.",
+     "speaker": "Agent",
+     "start": 79.41,
+     "end": 100.35
+    },
+    {
+     "turn_id": "pilot-T0009",
+     "quote": "Yes, there is. there is a couple actually. There is the Tokyo Disney Resort Hotel, which is on the like the larger Disney campus.",
+     "speaker": "Agent",
+     "start": 107.97,
+     "end": 127.582
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "The agent confirmed the booking details and sent an itinerary email to the customer.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0036",
+     "quote": "so let's go ahead and make reservation for that family suite of four for August fifteenth to the nineteenth at that Italian hotel.",
+     "speaker": "Customer",
+     "start": 394.482,
+     "end": 416.222
+    },
+    {
+     "turn_id": "pilot-T0048",
+     "quote": "Okay, I'll be sending that over to you within the next twenty minutes and that'll have your itinerary for the hotel trip as well as your park experience with details of the package details.",
+     "speaker": "Agent",
+     "start": 554.658,
+     "end": 578.638
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "The agent restated the customer's request and provided relevant information.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0004",
+     "quote": "Absolutely. A family of four to Disney Sea and to Disneyland.",
+     "speaker": "Agent",
+     "start": 39.458,
+     "end": 48.798
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "A specific reservation was made and an email itinerary was promised.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0036",
+     "quote": "so let's go ahead and make reservation for that family suite of four for August fifteenth to the nineteenth at that Italian hotel.",
+     "speaker": "Customer",
+     "start": 394.482,
+     "end": 416.222
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "The booking was completed and the customer received confirmation details.",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0043",
+     "quote": "All right, and it looks like that went through.",
+     "speaker": "Agent",
+     "start": 489.25,
+     "end": 509.33
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "positive",
+   "justification": "The customer expresses clear gratitude and satisfaction by repeatedly thanking the agent and stating the service was amazing.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0025",
+     "quote": "Okay. and if I don't pay for it like now is there a way to like pay a deposit or anything like that?",
+     "speaker": "Customer",
+     "start": 281.282,
+     "end": 296.59
+    },
+    {
+     "turn_id": "pilot-T0049",
+     "quote": "Sounds great. Sounds great. Thank you so much. Thank you very much. What was your name? Sheila. Okay. Thank you, Sheila. Appreciate your help. bye.",
+     "speaker": "Customer",
+     "start": 578.37,
+     "end": 590.59
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "neutral",
+   "justification": "The customer provides factual travel details and asks straightforward questions without expressing any emotion or dissatisfaction.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0003",
+     "quote": "Hi, I am calling to book a vacation package to Tokyo, Disneyland, and Disney Sea for a family of four, please.",
+     "speaker": "Customer",
+     "start": 25.042,
+     "end": 38.862
+    },
+    {
+     "turn_id": "pilot-T0006",
+     "quote": "Yes. we are actually going to Japan for the summer. but I also understand that like certain months there's like peak season for travel and I know like August and July tend to be more expensive than like June, for example. what do you are the prices for Maybe like travel dates in June cheaper than July, August?",
+     "speaker": "Customer",
+     "start": 48.978,
+     "end": 78.574
+    },
+    {
+     "turn_id": "pilot-T0008",
+     "quote": "Okay. And so I am looking to get like is there a hotel around there that we can stay at that's like close to the park or parks?",
+     "speaker": "Customer",
+     "start": 99.442,
+     "end": 109.822
+    }
+   ],
+   "window_turn_ids": [
+    "pilot-T0003",
+    "pilot-T0006",
+    "pilot-T0008"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses clear gratitude and satisfaction by repeatedly thanking the agent and stating 'Sounds great' before the call ends.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "pilot-T0049",
+     "quote": "Sounds great. Sounds great. Thank you so much. Thank you very much. What was your name? Sheila. Okay. Thank you, Sheila. Appreciate your help. bye.",
+     "speaker": "Customer",
+     "start": 578.37,
+     "end": 590.59
+    }
+   ],
+   "window_turn_ids": [
+    "pilot-T0045",
+    "pilot-T0047",
+    "pilot-T0049"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from neutral to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses enthusiasm and gratitude throughout the call, culminating in a warm farewell after successfully booking the package.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "pilot-T0004",
+    "quote": "Absolutely. A family of four to Disney Sea and to Disneyland. Yeah, we have packages perfect for that.",
+    "speaker": "Agent",
+    "start": 39.458,
+    "end": 48.798
+   },
+   {
+    "turn_id": "pilot-T0011",
+    "quote": "Yeah. Oh absolutely. Yes, there is. and I do also want to introduce you to an additional package deal that we have for families who are staying at the hotel within the Disney Sea premises.",
+    "speaker": "Agent",
+    "start": 145.762,
+    "end": 164.882
+   },
+   {
+    "turn_id": "pilot-T0021",
+    "quote": "That would actually end up being cheaper if you go with the August deal. Yes, absolutely.",
+    "speaker": "Agent",
+    "start": 244.45,
+    "end": 253.47
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 3
+ },
+ "notes_limitations": [
+  "2% of turns flagged as low ASR confidence (uncalibrated heuristic).",
+  "First turn looks like a spoken recording slate, not part of the conversation.",
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

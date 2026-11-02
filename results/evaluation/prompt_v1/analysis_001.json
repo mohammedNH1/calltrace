@@ -1,0 +1,246 @@
+{
+ "call_id": "001",
+ "transcript_source": "asr",
+ "model_id": "unsloth/Qwen3.5-4B-GGUF/Qwen3.5-4B-Q4_K_M.gguf",
+ "prompt_version": "v1",
+ "summary": {
+  "customer_issue": {
+   "status": "stated",
+   "text": "Customer accidentally transferred $1,384.66 to the wrong recipient via the banking app.",
+   "evidence": [
+    {
+     "turn_id": "001-T0002",
+     "quote": "I've just been on the banking app and I've made a mess of things to be honest.",
+     "speaker": "Customer",
+     "start": 18.274,
+     "end": 37.234
+    },
+    {
+     "turn_id": "001-T0009",
+     "quote": "So I just did the transaction before. So it was just my last one and it was meant to go to my rent, but I've sent it to a friend.",
+     "speaker": "Customer",
+     "start": 93.042,
+     "end": 103.838
+    },
+    {
+     "turn_id": "001-T0013",
+     "quote": "Yeah, it was one thousand three hundred and eighty four dollars and sixty six cents.",
+     "speaker": "Customer",
+     "start": 130.61,
+     "end": 136.83
+    }
+   ]
+  },
+  "agent_action": {
+   "status": "stated",
+   "text": "Agent verified customer details, located the transaction, and guided the customer through the recall process in the app.",
+   "evidence": [
+    {
+     "turn_id": "001-T0004",
+     "quote": "Just another manic Monday, as they say. just so I can bring up your details. could you please confirm the last three digits of your login details.",
+     "speaker": "Agent",
+     "start": 51.554,
+     "end": 70.814
+    },
+    {
+     "turn_id": "001-T0022",
+     "quote": "Okay, not a problem, so I'm just logging a ticket here now.",
+     "speaker": "Agent",
+     "start": 204.498,
+     "end": 220.994
+    },
+    {
+     "turn_id": "001-T0032",
+     "quote": "Oh that perfect. So that's a positive sign. Yes, if you click the three dots that should pop up with a few different options saying recall hopefully recall payment is there.",
+     "speaker": "Agent",
+     "start": 322.578,
+     "end": 344.318
+    }
+   ]
+  },
+  "outcome_or_next_step": {
+   "status": "stated",
+   "text": "Customer initiated the recall request in the app; funds expected to clear in 24-48 hours.",
+   "evidence": [
+    {
+     "turn_id": "001-T0041",
+     "quote": "Okay, yeah, that makes sense. All right, awesome. okay, yeah, I've got that come through on my text message. Just putting that in. Cool. That's done.",
+     "speaker": "Customer",
+     "start": 422.53,
+     "end": 433.87
+    },
+    {
+     "turn_id": "001-T0042",
+     "quote": "Brilliant. Okay. So that means it's flagged it with our payments team. it will also be flagged with Osco to halt that payment. the amount should hopefully appear as a pending refund within your account, but it will take twenty four to forty-eight hours for the money to actually clear.",
+     "speaker": "Agent",
+     "start": 435.346,
+     "end": 459.826
+    }
+   ]
+  }
+ },
+ "handling": {
+  "agent_acknowledged_issue": {
+   "answer": "yes",
+   "note": "Agent restated the issue and confirmed understanding.",
+   "evidence": [
+    {
+     "turn_id": "001-T0004",
+     "quote": "Okay, I can understand how frustrating that's been.",
+     "speaker": "Agent",
+     "start": 51.554,
+     "end": 70.814
+    }
+   ]
+  },
+  "concrete_action_or_next_step": {
+   "answer": "yes",
+   "note": "Agent confirmed the recall was initiated and provided timeline for refund.",
+   "evidence": [
+    {
+     "turn_id": "001-T0042",
+     "quote": "the amount should hopefully appear as a pending refund within your account, but it will take twenty four to forty-eight hours for the money to actually clear.",
+     "speaker": "Agent",
+     "start": 435.346,
+     "end": 459.826
+    }
+   ]
+  },
+  "resolution": {
+   "answer": "confirmed",
+   "note": "Customer successfully initiated the recall process and confirmed completion.",
+   "evidence": [
+    {
+     "turn_id": "001-T0041",
+     "quote": "Okay, yeah, that makes sense. All right, awesome. okay, yeah, I've got that come through on my text message. Just putting that in. Cool. That's done.",
+     "speaker": "Customer",
+     "start": 422.53,
+     "end": 433.87
+    }
+   ]
+  }
+ },
+ "customer_sentiment": {
+  "method": "Transcript text only (LLM label per window); no audio or vocal-emotion analysis.",
+  "overall": {
+   "label": "mixed",
+   "justification": "The customer expresses initial worry and frustration over the mistake but shifts to relief and gratitude once the recall process is initiated.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "001-T0003",
+     "quote": "I'm really worried because obviously I didn't want to go to the wrong place",
+     "speaker": "Customer",
+     "start": 37.234,
+     "end": 50.51
+    },
+    {
+     "turn_id": "001-T0011",
+     "quote": "it's really awkward and I don't think that I can get it back that easily",
+     "speaker": "Customer",
+     "start": 106.978,
+     "end": 123.358
+    },
+    {
+     "turn_id": "001-T0021",
+     "quote": "I definitely need this investigated further. not able to contact them at all.",
+     "speaker": "Customer",
+     "start": 197.09,
+     "end": 204.67
+    }
+   ],
+   "window_turn_ids": []
+  },
+  "beginning": {
+   "label": "negative",
+   "justification": "The customer expresses worry and anxiety about sending money to the wrong place.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "001-T0002",
+     "quote": "I've made a mess of things to be honest.",
+     "speaker": "Customer",
+     "start": 18.274,
+     "end": 37.234
+    },
+    {
+     "turn_id": "001-T0003",
+     "quote": "I'm really worried because obviously I didn't want to go to the wrong place",
+     "speaker": "Customer",
+     "start": 37.234,
+     "end": 50.51
+    }
+   ],
+   "window_turn_ids": [
+    "001-T0002",
+    "001-T0003",
+    "001-T0005"
+   ]
+  },
+  "ending": {
+   "label": "positive",
+   "justification": "The customer expresses relief, gratitude, and offers a five-star rating with a request for a raise.",
+   "ambiguity_note": "none",
+   "evidence": [
+    {
+     "turn_id": "001-T0049",
+     "quote": "This is giving me a little bit of relief. I was freaking out.",
+     "speaker": "Customer",
+     "start": 539.026,
+     "end": 545.166
+    },
+    {
+     "turn_id": "001-T0056",
+     "quote": "No, that's all you've been such a big help. I really appreciate it. Five stars. Tell your boss to give you a raise.",
+     "speaker": "Customer",
+     "start": 597.346,
+     "end": 604.686
+    }
+   ],
+   "window_turn_ids": [
+    "001-T0049",
+    "001-T0052",
+    "001-T0056"
+   ]
+  },
+  "change": "improved",
+  "change_note": "Window labels moved from negative to positive."
+ },
+ "agent_sentiment": {
+  "label": "positive",
+  "justification": "The agent expresses relief and satisfaction upon successfully guiding the customer through the recall process and receiving gratitude.",
+  "ambiguity_note": "none",
+  "evidence": [
+   {
+    "turn_id": "001-T0032",
+    "quote": "Oh that perfect. So that's a positive sign.",
+    "speaker": "Agent",
+    "start": 322.578,
+    "end": 344.318
+   },
+   {
+    "turn_id": "001-T0034",
+    "quote": "Yes, yeah, that's fantastic. That means you've contacted us in time.",
+    "speaker": "Agent",
+    "start": 347.058,
+    "end": 358.366
+   },
+   {
+    "turn_id": "001-T0042",
+    "quote": "Brilliant. Okay. So that means it's flagged it with our payments team.",
+    "speaker": "Agent",
+    "start": 435.346,
+    "end": 459.826
+   }
+  ],
+  "window_turn_ids": []
+ },
+ "validation": {
+  "passed": true,
+  "errors": [],
+  "retries_used": 0
+ },
+ "notes_limitations": [
+  "Sentiment comes from transcript text of a role-played call; it may not reflect real feelings."
+ ]
+}

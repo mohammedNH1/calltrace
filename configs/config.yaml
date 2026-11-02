@@ -1,0 +1,68 @@
+# CallTrace configuration. Every experiment-relevant setting lives here so that a
+# reviewer can see, in one file, what produced the outputs in results/.
+
+dataset:
+  repo_id: apptek-com/apptek_callcenter_dialogues
+  # Pinned commit so that sampling and downloads stay reproducible.
+  revision: b98967d9946f7f59f58d08624a2a00fe98fe0219
+  license: CC BY-SA 4.0
+  accents: [en-AU, en-CA, en-CN, en-GB, en-GB_SCT, en-GB_WLS, en-IE, en-IN, en-MX,
+            en-SG, en-US_Aave, en-US_General, en-US_Southern, en-ZA]
+
+sampling:
+  seed: 20261108
+  calls_per_accent: 1       # 14 accents -> 14 calls
+  min_duration_s: 180       # eligibility rule, checked before the draw
+  pilot_accent: en-US_General  # the pilot call is used only to choose the ASR model
+
+asr:
+  engine: parakeet
+  model_id: nemo-parakeet-tdt-0.6b-v3   # onnx-asr alias of istupakov/parakeet-tdt-0.6b-v3-onnx
+  # Full-precision weights. int8 weights gave far higher WER on some voices (45.8% vs 5.4% on one
+  # channel); see results/evaluation/asr_parakeet_precision.csv and the README.
+  quantization: null
+  # Silero settings recommended by the dataset card and used in its benchmark.
+  vad:
+    min_silence_duration_ms: 10000
+    min_speech_duration_ms: 250
+    max_speech_duration_s: 30
+  # Per-word heuristic used only to flag text for review. It is not a calibrated probability.
+  low_confidence_logprob: -0.7
+  low_confidence_turn_share: 0.25
+
+turns:
+  word_gap_s: 1.2          # silence that ends a speech run on one channel
+  same_speaker_merge_s: 2.0 # merge neighbouring runs if nobody spoke in between
+  backchannel_max_words: 3  # short interjection inside the other speaker's run
+  max_turn_s: 30            # split longer turns at a sentence end for finer evidence
+  out_of_sync_overlap_share: 0.3  # flag calls whose channels overlap more than this
+
+llm:
+  # Any OpenAI-compatible server works. Default: llama.cpp llama-server started by
+  # scripts/start_llm_server.py. No API key is needed.
+  base_url: http://127.0.0.1:8088/v1
+  model_id: unsloth/Qwen3.5-4B-GGUF
+  model_revision: e87f176479d0855a907a41277aca2f8ee7a09523
+  gguf_file: Qwen3.5-4B-Q4_K_M.gguf
+  temperature: 0.0
+  seed: 20261108
+  max_tokens: 1200
+  max_retries: 2            # bounded repair attempts after a failed validation
+  request_timeout_s: 600
+
+analysis:
+  prompt_version: v2  # v1 overused resolution "confirmed"; see README
+  sentiment_window_turns: 3   # substantive customer turns per window
+  min_window_turns: 2         # fewer than this -> insufficient_evidence
+  substantive_min_words: 4    # shorter turns are excluded from the windows
+
+evaluation:
+  collar_s: 0.25              # forgiveness around reference boundaries for DER
+  frame_s: 0.01
+  reference_experiment_calls: 5  # ASR vs reference downstream comparison subset
+
+paths:
+  raw_audio: data/raw
+  manifests: data/manifests
+  results: results
+  reports: reports
