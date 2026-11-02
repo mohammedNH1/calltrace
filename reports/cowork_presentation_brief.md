@@ -218,10 +218,10 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 
 ---
 
-## 8. Measured results
+## 8. Results by type of evidence
 
 **Terms**
-- **WER (word error rate):** the share of reference words transcribed wrongly, counting substitutions, deletions, and insertions. Lower is better. It is computed after normalising case, punctuation, and numbers, following the dataset's scoring steps. It is not overall system accuracy.
+- **WER (word error rate):** (substitutions + deletions + insertions) divided by the number of reference words. Lower is better, and it can exceed 100%. It is computed after normalising case, punctuation, and numbers, following the dataset's scoring steps. It is not overall system accuracy.
 - **DER (diarization error rate):** the share of speech time attributed wrongly: speech missed, speech falsely added, or assigned to the wrong speaker ("confusion").
 
 | Type | Metric | Result | Sample | Compared against |
@@ -242,7 +242,7 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 | Human | Agreement with human labels | **Not available** | 0 labels completed | Worksheet pending |
 
 **Reading notes**
-- **Published comparison:** the dataset paper reports 9.2% for Parakeet v3 as an average over accents, on all 873 calls. Our 9.32% is pooled by words. Our average over the 14 calls is 8.56%. This is a sanity check, not a replication.
+- **Published comparison:** the dataset paper reports 9.2% for Parakeet v3 as an average over accents, on all 873 calls. Our 9.32% is pooled by words. Our average over the 14 calls is 8.56%. The published figure is context, not a directly comparable benchmark or a replication.
 - **DER:** the mono baseline wins on overall DER, but split channels win clearly on attributing speech to the right person. Split-channel error is mostly false alarm (speech added). Word end times are estimated and can run long, which is a likely contributor.
 - **Confusion:** with split channels, confusion measures timing overlap, not a speaker-identification decision.
 - **5 label differences are 3 underlying differences:** two are sentiment-change labels that follow from another differing label.
@@ -266,7 +266,7 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 - More sensitive VAD and louder audio gave no consistent fix: most test channels stayed about the same or got worse. The largest improvement was one channel, from 43.36% to 37.34%.
 - On one channel: int8 Parakeet 45.78%, Whisper large-v3 6.83%, full-precision Parakeet 5.38%.
 
-*Hypothesis, not tested:* why quantization hurts these voices. The mechanism is unknown. The ONNX weights are a third-party export.
+*Limit of this finding:* it is an observation about these configurations of a third-party ONNX export on this sample, not proof that quantization generally reduces accuracy. The mechanism was not tested.
 
 **B. Remaining transcription errors**
 
@@ -286,7 +286,7 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 
 **D. The overlap flag is unvalidated**
 
-*Verified:* it flags 3 calls, not 1: call 005 at 61%, call 004 at 45%, and call 010 at 31%.
+*Verified:* this heuristic flags 3 calls: call 005 at 61%, call 004 at 45%, and call 010 at 31%.
 - Reference overlap on 004 and 010 is only 22.9% and 14.6%. So these two flags may be false alarms, partly because estimated word times run long.
 - The 30% threshold was chosen after seeing call 005.
 
@@ -347,7 +347,7 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 - A smoke run took 1 minute 41 seconds, and its transcript and analysis matched the main run byte for byte.
 - Scope: one call only, on the same machine, and it reused downloaded model weights. No full 14-call clean run was done. See section 11.
 
-**Not yet done:** recording, recording link in the README, GitHub repository, and submission.
+**Not yet done:** recording, pushing the documentation corrections, and submission. The recording link goes in the submission email.
 
 ---
 
@@ -357,7 +357,7 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 |---|---|---|
 | Audible playback in the app | **Unverified** | The browser test confirmed highlight and player position, in a headless browser. Nobody has confirmed hearing the sound. Check this before recording |
 | Number of LLM layers on the GPU | **Unverified** | The server was started with `--n-gpu-layers 99`, and 3,037 of 4,096 MiB GPU memory was seen in use in one reading. The load log was overwritten, so full offload cannot be shown |
-| Parakeet weights revision | **Not pinned in code** | The local cache holds revision `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce`, but the code downloads the default branch. A later change upstream could alter results |
+| Parakeet and Silero revisions | **Not pinned in code** | The local cache holds `8f23f0c03c8761650bdb5b40aaf3e40d2c15f1ce` and `b3e3ee3cce4c11ceb63b1a0b229d916069c1ddf6`, but the code downloads each default branch. A later change upstream could alter results |
 | Exact Silero VAD release | **Unverified** | Cached as `istupakov/silero-vad-onnx` revision `b3e3ee3c...`. It is not confirmed to be the `silero-vad==5.1.2` named on the dataset card |
 | Exact match to the dataset's scorer | **Unverified** | The scoring steps were re-implemented with `whisper_normalizer`, and the official script was not run for comparison |
 | Whether published figures used the same weights | **Unverified** | The paper names the model, not this ONNX export |
@@ -366,12 +366,10 @@ Only demonstrated functionality is listed. Claims of uniqueness should be avoide
 | Other platforms | **Unverified** | Only Windows 11 was tested |
 | Human agreement figures | **Not available** | No labels exist |
 
-**Known corrections to older project files.** These older statements are superseded by this brief:
-- `results/evaluation/error_analysis.md` says only call 005 passes the overlap threshold. In fact 3 calls do.
-- `error_analysis.md`, `README.md`, and the existing deck say VAD and level changes did not help or had no effect. That is too strong: some channels improved, though not consistently.
-- `reports/demo_walkthrough.md` plans 2:20 for the demo. This brief allows 1:30, so follow the shorter notes on slide 7.
-- The existing deck's last slide says "pinned models". Parakeet is not pinned in code.
-- `reports/speaker_notes.md` uses phrasing such as "I reviewed" and "I tested", which may overstate personal work. Use the notes below instead.
+**Known corrections to older project files.** The README, `error_analysis.md`, requirements checklist, demo walkthrough, and `reports/speaker_notes.md` have been corrected. These older items were left unchanged and are superseded by this brief:
+- `reports/calltrace_presentation.pptx`, the final 9-slide deck, says "close to the published figure" on slide 7, and its embedded notes on slides 2, 7, and 8 use older wording.
+- `reports/figures/wer_by_call.png` says quantized weights "caused" the worst errors.
+- `notebooks/04_evaluation.ipynb` shows the older `error_analysis.md` in its saved output.
 
 ---
 
@@ -384,6 +382,8 @@ Presenter guidance: I set the goal, requirements, and project direction. Claude 
 ---
 
 ## 13. Proposed slides: 10 slides, 10:00 total
+
+This was the proposal given to Cowork. The final deck has 9 slides, with proposed slides 6 and 7 combined into one demo slide. `reports/speaker_notes.md` follows the final deck.
 
 ### Slide 1: CallTrace: checking what an AI says about a call (0:40)
 
@@ -412,7 +412,7 @@ Presenter guidance: I set the goal, requirements, and project direction. Claude 
 
 **Visual:** compact requirement-to-output table from section 2.
 
-**Speaker notes:** "Maharah asked for data research, transcripts with separated speakers, a summary and customer sentiment for each call, and a presentation, all reproducible from a GitHub repository. All 14 sampled calls went through every step, and none failed in processing. We also added the optional review app, Python classes, and diagrams. The title says agent performance, but I want to be clear about scope: this describes individual calls. It doesn't score employees or rank agents."
+**Speaker notes:** "Maharah asked for data research, transcripts with separated speakers, a summary and customer sentiment for each call, and a presentation, all reproducible from a GitHub repository. All 14 sampled calls completed processing, and three of them later failed the citation check, which is a separate status. We also added the optional review app, Python classes, and diagrams. The title says agent performance, but I want to be clear about scope: this describes individual calls. It doesn't score employees or rank agents."
 
 ### Slide 3: Choosing the data (1:05)
 
@@ -490,7 +490,7 @@ Presenter guidance: I set the goal, requirements, and project direction. Claude 
 
 ### Slide 8: What we measured, and who judged it (1:15)
 
-**Takeaway:** transcription is close to the published figure, but citations and sentiment need human checking.
+**Takeaway:** transcription is measured against manual references, while citations are checked by rules and claims only by AI, so human checking is still needed.
 
 **Content**
 - Word error rate (WER): 9.32%, on 19,248 words. Agent 5.79%, customer 15.04%
@@ -501,22 +501,22 @@ Presenter guidance: I set the goal, requirements, and project direction. Claude 
 
 **Visual:** results table from section 8, grouped by Measured, Automatic check, AI review, and Human, with AI rows clearly marked.
 
-**Speaker notes:** "Let me separate who judged what. Word error rate is the share of words transcribed wrongly, compared with the dataset's manual transcripts. Ours is 9.3 percent over about 19,000 words. That's close to the published 9.2 percent, though that's only a sanity check, since the sample is small. Customers have much higher error than agents. Automatic checks show 11 of 14 calls pass, but that only proves the citations are real. Whether claims are right is a harder question. An AI review found 34 of 42 claims correct, but only 20 fully covered by their own citations. Please note: that review was by Claude, not a person, and it saw the outputs first. No human review has happened yet. A worksheet with the model's labels hidden is ready for that."
+**Speaker notes:** "Let me separate who judged what. Word error rate is substitutions plus deletions plus insertions, divided by the number of words in the dataset's manual transcripts. Ours is 9.3 percent over about 19,000 words. The paper reports 9.2 percent for this model, but that's context, not a directly comparable benchmark. Customers have much higher error than agents. All 14 calls completed processing. Automatic checks show 11 of the 14 pass, but that only proves the citations are real. Whether claims are right is a harder question. An AI review found 34 of 42 claims correct, but only 20 fully covered by their own citations. Please note: that review was by Claude, not a person, and it saw the outputs first. No human review has happened yet. A worksheet with the model's labels hidden is ready for that."
 
 ### Slide 9: What went wrong, and what we learned (1:10)
 
 **Takeaway:** the most useful findings came from failures, and some causes remain unconfirmed.
 
 **Content**
-- Compressed int8 weights raised WER to 14.39%; full precision gave 9.32%. A pilot check missed it
-- Call 005: citations pass, but the conclusion looks wrong; channels appear out of sync (not confirmed)
+- Tested configurations: int8 weights 14.39% WER; full precision 9.32%. A pilot check missed the gap
+- Call 005: citations pass, but AI review judged the conclusion wrong; channels suspected out of sync (not confirmed)
 - Overlap flag fires on 3 calls, with possible false alarms on 2
 - Overall sentiment leans positive, often on polite closings
 - Settings were tuned on this sample, so results aren't a clean test
 
 **Visual:** `reports/figures/wer_by_call.png`, with `reports/figures/app_flagged_call.png` beside it.
 
-**Speaker notes:** "First, a configuration mistake. We started with compressed int8 weights for speed. A pilot call looked fine, but the full sample was at 14 percent, with one call at 39. The published figure made that stand out. Full precision brought it down to 9.3 percent. We know that change fixed it, but not why. Second, call 005. Every citation check passes, yet the customer gives card details before the agent says hello. The manual transcript shows the same order. We believe the channels are out of sync, but no one has listened to confirm it. So traceability helped us find the problem, but didn't prevent it. We added a flag, which fires on three calls, and two of those may be false alarms. Also, overall sentiment leans positive, often because of polite closings. And we tuned settings on this same sample, so these results aren't a clean test."
+**Speaker notes:** "First, a configuration mistake. We started with compressed int8 weights for speed. A pilot call looked fine, but the full sample was at 14 percent, with one call at 39. The published figure, as context, prompted a closer look. A more sensitive VAD and louder audio gave no consistent fix. The full-precision run gave 9.3 percent. That's an observation about these configurations, not proof that quantization generally reduces accuracy, and we don't know the mechanism. Second, call 005. Every citation check passes, yet the customer gives card details before the agent says hello. The manual transcript shows the same order. We suspect the channels are out of sync, but no one has listened to confirm it. So traceability helped us find the problem, but didn't prevent it. We added a heuristic flag, which fires on three calls, and two of those may be false alarms. Also, overall sentiment leans positive, often because of polite closings. And we tuned settings on this same sample, so these results aren't a clean test."
 
 ### Slide 10: Reproducibility and next steps (0:40)
 
@@ -524,13 +524,13 @@ Presenter guidance: I set the goal, requirements, and project direction. Claude 
 
 **Content**
 - 4 executed notebooks, 36 passing tests, reusable CSV and JSON results
-- Fixed seed; pinned dataset and LLM versions; clean-copy smoke run matched
+- Fixed seed; pinned dataset and LLM versions; one-call clean-copy smoke run matched
 - Next: human labels, real consented calls, mono audio
 - Built with AI assistance: Claude Code helped with implementation, experiments, evaluation, and documentation
 
 **Visual:** simple two-column layout: "Available now" and "Next". No code-heavy content.
 
-**Speaker notes:** "To close, the README has the setup and commands, and there are four executed notebooks and 36 passing tests. In a clean copy, a one-call smoke test matched the main run exactly. I haven't run all 14 calls from a clean copy, and only Windows was tested. The next step is human review, because that's the biggest gap. After that, I'd test on real, consented calls and on mono recordings. The main thing I learned is to make AI output easy to check, and to report what fails. Thank you."
+**Speaker notes:** "To close, the README has the setup and commands, and there are four executed notebooks and 36 passing tests. In a clean copy on the same machine, a one-call smoke test matched the main run exactly. I haven't run all 14 calls from a clean copy, and only Windows was tested. The next step is human review, because that's the biggest gap. After that, I'd test on real, consented calls and on mono recordings. The main thing I learned is to make AI output easy to check, and to report what fails. Thank you."
 
 **Timing check:** 0:40 + 0:40 + 1:05 + 1:15 + 0:45 + 1:00 + 1:30 + 1:15 + 1:10 + 0:40 = 10:00.
 
